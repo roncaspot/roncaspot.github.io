@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hw-core.github.io/universal-pwa/sitemap.xml
+Sitemap: https://roncaspot.github.io/sitemap.xml
