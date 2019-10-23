@@ -17,13 +17,13 @@
     "docker:shell": "node run docker:shell",
     "docker:remove": "node run docker:remove",
     "docker:stop": "node run docker:stop",
-    "build": "craco build --config cra-config.js && node ./apps/sitemap-gen/index.js",
+    "build": "craco build --config cra-config.js",
     "build:ssg": "npm run build && npx react-snap",
     "test": "craco test --config cra-config.js",
     "eject": "react-scripts eject",
     "prestart": "node ./apps/installer/installer.js",
     "predeploy": "npm run build:ssg",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b master",
     "upgrade-packages": "npx ncu -u"
   },
   "eslintConfig": {

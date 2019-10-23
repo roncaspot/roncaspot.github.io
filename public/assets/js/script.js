@@ -121,7 +121,7 @@ $(function () {
          *************************/
         if ($('.percentage').length) {
             $('.percentage').easyPieChart({
-                animate: 5000,
+                animate: 3000,
                 onStep: function (value) {
                     this.$el.find('span').text(~~value);
                 }

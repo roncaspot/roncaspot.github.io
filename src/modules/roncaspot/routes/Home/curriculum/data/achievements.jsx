@@ -1,6 +1,6 @@
 import CryptoJpg from "../../../../data/pictures/achi-crypto.jpg"
 import RSTJpg from "../../../../data/pictures/achi-redsquarelab.jpg"
-import RoncaspotPNG from "../../../../data/pictures/achi-roncaspot.PNG"
+import RoncaspotPNG from "../../../../data/pictures/achi-roncaspot.png"
 
 export const achievements = [
     {
@@ -16,7 +16,7 @@ export const achievements = [
         `
     },
     {
-        //"__hwc_url": "https://roncaspot.github.io",
+        "__hwc_url": "https://www.itsease.com/",
         "__hwc_name": "Ease Platform",
         "Title": {
             "Code": "projects",
@@ -28,7 +28,7 @@ export const achievements = [
         `
     },
     {
-        //"__hwc_url": "https://roncaspot.github.io",
+        "__hwc_url": "https://placemeliving.com/",
         "__hwc_name": "PlaceMe",
         "Title": {
             "Code": "projects",
@@ -72,7 +72,7 @@ export const achievements = [
         },
         "Description": `
             2019 - boilerplate for
-      server applications (NodeJS, Apollo, GraphQL, Sequelize, MySQL,
+      server applications (NodeJS, GraphQL, Sequelize, MySQL,
       SQLite)
       `
     },
@@ -157,6 +157,17 @@ export const achievements = [
             "Label": "Competition"
         },
         "Description": "2016 - 2th position with SOuL Project. Phonegap & Javascript stack (Role: Backend Developer)"
+    },
+    {
+        "__hwc_url": "http://www.palmapp.it",
+        "__hwc_name": "Palmapp",
+        "Title": {
+            "Code": "projects",
+            "Label": "Project"
+        },
+        "Description": `
+        2016- Hybrid mobile app developed with jquery, cordova, php for Palma Campania Town
+      `
     },
     {
         "__hwc_url": "https://github.com/hyperweb2/contract-form",

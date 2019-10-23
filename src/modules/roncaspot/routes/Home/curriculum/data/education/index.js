@@ -10,7 +10,33 @@ export default [
             "Current": false
         },
         "Title": "Information Technology",
-        "Activities": "<p>Subjects:</p><ul><li>COMPUTER ARCHITECTURE</li><li>MATHEMATICAL ANALYSIS</li><li>OPERATIONAL RESEARCH</li><li>DISCRETE MATHEMATICS</li><li>PROGRAMMING</li><li>PROGRAMMING 2 ^</li><li>ALGORITHMS</li><li>DATABASES</li><li>PHYSICS</li><li>SOFTWARE ENGINEERING</li><li>ENGLISH</li><li>HUMAN COMPUTER INTERACTION</li><li>OPERATING SYSTEMS</li><li>ADVANCED PROGRAMMING TECHNIQUES</li><li>MATHEMATICAL AND STATISTICAL METHODS</li><li>COMPUTER NETWORKS</li><li>THEORY OF COMPUTATION</li><li>DISTRIBUTED PROGRAMMING</li><li>NUMERICAL ANALYSIS</li><li>MOBILE PROGRAMMING</li><li>WEB DEVELOPING</li><li>DATA STRUCTURES</li></ul><p> </p><p><strong>Thesis</strong>:<br /><br />Unilance: the future of job</p><p>Marketplace for freelancers based on cryptocurrencies</p><p> </p><p> </p>",
+        "Activities": `
+            <p>Subjects:</p>
+            <ul>
+                <li>COMPUTER ARCHITECTURE</li>
+                <li>MATHEMATICAL ANALYSIS</li>
+                <li>OPERATIONAL RESEARCH</li>
+                <li>DISCRETE MATHEMATICS</li>
+                <li>PROGRAMMING</li>
+                <li>PROGRAMMING 2 ^</li>
+                <li>ALGORITHMS</li>
+                <li>DATABASES</li>
+                <li>PHYSICS</li>
+                <li>SOFTWARE ENGINEERING</li>
+                <li>ENGLISH</li>
+                <li>HUMAN COMPUTER INTERACTION</li>
+                <li>OPERATING SYSTEMS</li>
+                <li>ADVANCED PROGRAMMING TECHNIQUES</li>
+                <li>MATHEMATICAL AND STATISTICAL METHODS</li>
+                <li>COMPUTER NETWORKS</li>
+                <li>THEORY OF COMPUTATION</li>
+                <li>DISTRIBUTED PROGRAMMING</li>
+                <li>NUMERICAL ANALYSIS</li>
+                <li>MOBILE PROGRAMMING</li>
+                <li>WEB DEVELOPING</li>
+                <li>DATA STRUCTURES</li>
+            </ul>
+            <p><strong>Thesis</strong>:<br /><br />Unilance: the future of job</p><p>Marketplace for freelancers based on cryptocurrencies</p>`,
         "Organisation": {
             "Name": "University of Salerno, Department of Information Technology",
             "ContactInfo": {

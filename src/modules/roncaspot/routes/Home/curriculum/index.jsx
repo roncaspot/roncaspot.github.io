@@ -10,6 +10,7 @@ import { chunk, html } from "@this/src/modules/roncaspot/libs/helpers"
 
 import { services, SoftSkills, skills } from "./data/skills"
 import { achievements } from "./data/achievements"
+import AboutDescr from "./data/about_descr"
 import OtherExp from "./data/experiences/other"
 
 var SkillsPassport = Data.SkillsPassport;
@@ -24,13 +25,14 @@ var Languages = Skills.Linguistic.MotherTongue.concat(Skills.Linguistic.ForeignL
 
 export default (props) => {
     var toPrint = props.print;
+    var display = props.display;
 
     return (
-        <div style={{ display: (toPrint ? "none" : "block") }}>
+        <div style={{ display: (!display ? "none" : "block") }}>
             <div ref={props.innerRef}>
                 {/* START HOME SECTION*/}
                 {/* START ABOUT SECTION*/}
-                <section id="about" className="section wow ">
+                <section id="about" className={"section " + (!toPrint ? "wow fadeInUpBig" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -44,45 +46,45 @@ export default (props) => {
                             </div>
                             <div className="col-sm-9">
                                 <div className="about-info row">
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"> <i className="fa fa-user" aria-hidden="true" /></div>
                                         <div className="info-text">
-                                            <span>Name</span>
+                                            <span><strong>Name</strong></span>
                                             {Identification.PersonName.FirstName} {Identification.PersonName.Surname}
                                         </div>
                                     </div>
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"> <i className="fa fa-envelope" aria-hidden="true" /></div>
                                         <div className="info-text">
-                                            <span>Email</span>
+                                            <span><strong>Email</strong></span>
                                             {Identification.ContactInfo.Email.Contact}
                                         </div>
                                     </div>
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"><i className="fas fa-phone-volume" aria-hidden="true" /></div>
                                         <div className="info-text">
-                                            <span>Phone</span>
+                                            <span><strong>Phone</strong></span>
                                             {Identification.ContactInfo.Telephone[0].Contact}
                                         </div>
                                     </div>
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"> <i className="fa fa-calendar" aria-hidden="true" /></div>
                                         <div className="info-text">
-                                            <span>Date Of Birthday</span>
+                                            <span><strong>Date Of Birthday</strong></span>
                                             {BirthDate.Year}/{BirthDate.Month}/{BirthDate.Day}
                                         </div>
                                     </div>
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"><i className="fa fa-map-marker" aria-hidden="true" /> </div>
                                         <div className="info-text">
-                                            <span>Address</span>
+                                            <span><strong>Address</strong></span>
                                             {Address.Municipality}, {Address.Country.Label}
                                         </div>
                                     </div>
-                                    <div className="col-sm-6 info-block wow ">
+                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"> <i className="fa fa-flag" aria-hidden="true" /></div>
                                         <div className="info-text">
-                                            <span>Nationality</span>
+                                            <span><strong>Nationality</strong></span>
                                             {Identification.Demographics.Nationality[0].Label}
                                         </div>
                                     </div>
@@ -99,7 +101,7 @@ export default (props) => {
                                         })}
                                     </div>
                                     <div className="col-sm-12 about-content">
-                                        {html(Data.CV.about)}
+                                        <AboutDescr />
                                         <p className="twke3">
                                             <span>Yours sincerely,</span>
                                             <img src={SignImg} style={{ maxWidth: '266px' }} className="img-responsive" alt="Sign" />
@@ -112,7 +114,7 @@ export default (props) => {
                 </section>
                 {/* END ABOUT SECTION*/}
                 {/* START SKILLS SECTION*/}
-                <section id="skills" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="skills" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -129,7 +131,7 @@ export default (props) => {
                                                 {row.map((skill, key2) => <div className="col-sm-6 skill-bar">
                                                     <div className="progress">
                                                         <div className="lead"> <i className={skill.icon} aria-hidden="true" /> {skill.name} </div>
-                                                        <div className={"progress-bar " + (!toPrint && "wow fadeInLeft")} data-progress={skill.value + '%'} style={{ width: skill.value + '%' }} data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>{skill.value + '%'} </span></div>
+                                                        <div className={"progress-bar " + (!toPrint ? "wow fadeInLeft" : "")} data-progress={skill.value + '%'} style={{ width: skill.value + '%' }} data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>{skill.value + '%'} </span></div>
                                                     </div>
                                                 </div>
                                                 )}
@@ -155,7 +157,7 @@ export default (props) => {
                                 <h2>Soft skills</h2>
                                 {chunk(SoftSkills, 3).map((row) => {
                                     return <div className="row">
-                                        {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 wow " + (!toPrint && "flipInX")} data-delay={100}>
+                                        {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 " + (!toPrint ? "wow flipInX" : "")} data-delay={100}>
                                             <div className="service-box">
                                                 <span className="service-icon pull-left"><i className={value.icon} /></span>
                                                 <div className="service-box-content">
@@ -171,12 +173,12 @@ export default (props) => {
                         <div className="row skill-language">
                             <h2>LANGUAGE SKILLS &amp; KNOWLEDGE</h2>
                             <div className="col-sm-12">
-                                <div className={"skills wow " + !toPrint ? "fadeInUp" : ""}>
+                                <div className={"skills " + (!toPrint ? "wow fadeInUp" : "")}>
                                     <div className="row">
                                         {Languages.map((value, key) => {
-                                            return <div className="col-md-3">
+                                            return <div className="col-sm-3">
                                                 <small>{value.Description.Label}</small>
-                                                <div className="percentage easyPieChart" data-percent={value.Description.__hwc_value} data-delay={100}><span>95</span>%<canvas width={165} height={165} /></div>
+                                                <div className="percentage easyPieChart" data-percent={value.Description.__hwc_value} data-animate={toPrint} data-delay={100}><span>{value.Description.__hwc_value}</span>%<canvas width={165} height={165} /></div>
                                             </div>
                                         })}
                                     </div>
@@ -187,7 +189,7 @@ export default (props) => {
                 </section>
                 {/* END SKILLS SECTION*/}
                 {/* START SERVICES SECTION*/}
-                <section id="services" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="services" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -196,7 +198,7 @@ export default (props) => {
                         </div>
                         {chunk(services, 3).map((row) => {
                             return <div className="row">
-                                {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 wow " + (!toPrint && "flipInX")} data-delay={100}>
+                                {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 " + (!toPrint ? "wow flipInX" : "")} data-delay={100}>
                                     <div className="service-box">
                                         <span className="service-icon pull-left"><i className={value.icon} /></span>
                                         <div className="service-box-content">
@@ -211,7 +213,7 @@ export default (props) => {
                 </section>
                 {/* END SERVICES SECTION*/}
                 {/* START ACHIEVEMENTS SECTION*/}
-                <section id="achievements" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="achievements" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -221,11 +223,11 @@ export default (props) => {
                         <div className="row">
                             <div className="grid">
                                 {achievements.map((value, key) => {
-                                    return <div className="col-lg-4 col-md-6 col-sm-12">
-                                        <figure className={"achi" + value.Title.Label + " effect-winston wow " + !toPrint ? "fadeInUp" : ""}>
+                                    return <div className="col-lg-4 col-md-4 col-sm-4">
+                                        <figure className={"achi" + value.Title.Label + " " + (!toPrint ? "effect-winston wow fadeInUp" : "")}>
                                             <img style={{ minWidth: 303, minHeight: 230, maxWidth: "100%" }} src={value.__hwc_img || "assets/images/trophy_a.png"} alt="Achi" />
                                             <figcaption>
-                                                <h2>{value.Title.Label} {value.__hwc_name && "-" + value.__hwc_name}</h2>
+                                                <h2 style={{ paddingBottom: 10, fontSize: "22px" }}>{value.Title.Label} {value.__hwc_name && "-" + value.__hwc_name}</h2>
                                                 <span>
                                                     {html(value.Description)}
                                                     <br />
@@ -244,7 +246,7 @@ export default (props) => {
                 </section>
                 {/* END ACHIEVEMENTS SECTION*/}
                 {/* START HOBBIES SECTION */}
-                <section id="hobbies" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="hobbies" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -254,7 +256,7 @@ export default (props) => {
                         <div className="row">
                             {chunk(hobbies, 3).map((row) => {
                                 return <div className="row">
-                                    {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 wow " + (!toPrint && "flipInX")} data-delay={100}>
+                                    {row.map((value, key) => <div key={key} className={"col-md-4 col-sm-4 " + (!toPrint ? "wow flipInX" : "")} data-delay={100}>
                                         <div className="service-box">
                                             <span className="service-icon pull-left"><i className={value.icon} /></span>
                                             <div className="service-box-content">
@@ -270,7 +272,7 @@ export default (props) => {
                 </section>
                 {/* END HOBBIES SECTION */}
                 {/* START RESUMES SECTION*/}
-                <section id="resumes" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="resumes" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -282,7 +284,7 @@ export default (props) => {
                                 {WorkExperiences.map((value, key) => {
                                     const effect = key % 2 === 0 ? "fadeInLeft" : "fadeInRight"
 
-                                    return <div className={"timeline-block wow " + (!toPrint && effect)}>
+                                    return <div className={"timeline-block " + (!toPrint ? "wow " + effect : "")}>
                                         <div className="timeline-img" data-anim-effect="zoomIn">
                                             <i>{value.Period.Current ? "Now" : value.Period.To.Year} </i>
                                         </div>
@@ -297,21 +299,21 @@ export default (props) => {
                         </div>
                     </div>
                 </section>
-                <section id="other-experiences" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="other-experiences" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
                                 <h4>Other Experiences</h4>
                             </div>
                             <div className="row">
-                                {OtherExp.map((value, key) => <div className="col-sm-1">{value}</div>)}
+                                {OtherExp.map((value, key) => <div className="col-sm-3">{value}</div>)}
                             </div>
                         </div>
                     </div>
                 </section>
                 {/* END RESUMES SECTION*/}
                 {/* START EDUCATION SECTION*/}
-                <section id="education" className={"section wow " + !toPrint ? "fadeInUp" : ""}>
+                <section id="education" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -323,7 +325,7 @@ export default (props) => {
                                 {Educations.map((value, key) => {
                                     const effect = key % 2 === 0 ? "fadeInLeft" : "fadeInRight"
 
-                                    return <div className={"timeline-block wow " + (!toPrint && effect)}>
+                                    return <div className={"timeline-block " + (!toPrint ? "wow " + effect : "")}>
                                         <div className="timeline-img" data-anim-effect="zoomIn">
                                             <i>{value.Period.Current ? "Now" : value.Period.To.Year} </i>
                                         </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 import { sEvtMgr, Events } from "@hw-core/react-platform/src/platform/EventManager"
 import Home from "./routes/Home"
-import { Route } from 'react-router';
+import Print from "./routes/Print"
+import { Route } from 'react-router-dom';
 import Helmet from "react-helmet"
 import useScript from "@hw-core/react-platform/src/libs/useScript"
 
 sEvtMgr.on(Events.route_load_static, (routes) => {
     routes.push(<Route exact path="/" component={Home} />)
+    routes.push(<Route exact path="/index.html" component={Home} />)
+    routes.push(<Route exact path="/print.html" component={Print} />)
 })
 
 function ScriptLoader() {

@@ -26,9 +26,6 @@ achiList.push({
 });
 
 export default {
-    "CV": {
-        about: jsx2Html(<AboutDescr />)
-    },
     "SkillsPassport": {
         "Locale": "en",
         "DocumentInfo": {
@@ -44,7 +41,7 @@ export default {
             "ECV": [
                 {
                     "name": "LearnerInfo",
-                    "order": "Identification Headline WorkExperience Education Skills Achievement ReferenceTo"
+                    "order": "Identification Headline Skills Achievement WorkExperience Education ReferenceTo"
                 },
                 {
                     "name": "LearnerInfo.Identification"
@@ -146,6 +143,15 @@ export default {
             ]
         },
         "LearnerInfo": {
+            Headline: {
+                Type: {
+                    Code: "personal_statement",
+                    Label: "PERSONAL STATEMENT"
+                },
+                Description: {
+                    Label: jsx2Html(<AboutDescr />)
+                }
+            },
             "Identification": {
                 "PersonName": {
                     "FirstName": "Giuseppe",
@@ -158,7 +164,7 @@ export default {
                             "PostalCode": "2011",
                             "Municipality": "Haarlem",
                             "Country": {
-                                "Label": "Netherland"
+                                "Label": "The Netherlands"
                             }
                         }
                     },
@@ -223,9 +229,6 @@ export default {
                         {
                             "Code": "IT",
                             "Label": "Italian"
-                        },
-                        {
-                            "Label": "Italia"
                         }
                     ]
                 }

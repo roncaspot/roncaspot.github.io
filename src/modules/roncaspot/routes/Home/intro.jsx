@@ -1,70 +1,7 @@
 import React, { useRef } from "react"
-import html2pdf from 'html2pdf.js';
-import ReactToPrint from 'react-to-print';
-import Data from "./curriculum/data/data"
 import { HashLink } from 'react-router-hash-link';
 
 import AvatarPng from "../../data/pictures/avatar.png"
-
-import Curriculum from "./curriculum"
-
-async function downloadEuropass() {
-    const url = 'https://europass.cedefop.europa.eu/rest/v1/document/to/pdf-cv';
-    var data = Data;
-    delete data.CV
-
-    function filterObject(obj, key) {
-        for (var i in obj) {
-            if (!obj.hasOwnProperty(i)) continue;
-            if (typeof obj[i] == 'object') {
-                filterObject(obj[i], key);
-            } else if (i.startsWith(key)) {
-                delete obj[key];
-            }
-        }
-        return obj;
-    }
-
-    filterObject(data, "__hwc")
-
-    console.log(data)
-
-    try {
-        const response = await fetch(url, {
-            method: 'POST', // or 'PUT'
-            body: JSON.stringify(data), // data can be `string` or {object}!
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept-Language': "en"
-            }
-        });
-
-        var blob = await response.blob();
-
-        if (typeof window.navigator.msSaveBlob !== 'undefined') {
-            window.navigator.msSaveBlob(blob, "europass_cv.pdf");
-        } else {
-            var URL = window.URL || window.webkitURL;
-            var downloadUrl = URL.createObjectURL(blob);
-            //This way it downloads the file in the 3 major browsers with file name:
-            var a = document.createElement("a");
-            // safari doesn't support this yet
-            if (typeof a.download === 'undefined') {
-                window.location = downloadUrl;
-            } else {
-                a.href = downloadUrl;
-                a.download = "europass_cv.pdf";
-                document.body.appendChild(a);
-                a.click();
-            }
-            setTimeout(function () {
-                URL.revokeObjectURL(downloadUrl);
-            }, 100); // cleanup 100
-        }
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
 
 export default (props) => {
     var CVElem = useRef(null);
@@ -88,18 +25,11 @@ export default (props) => {
                             </div>
                             <span id="typed" style={{ whiteSpace: 'pre' }} />
                         </div>
-                        <Curriculum innerRef={CVElem} print={true} />
-                        {/*<ReactToPrint
-                            trigger={() => <button>Print this out!</button>}
-                            content={() => CVElem.current}
-                        />*/}
-                        <button onClick={() => html2pdf().set({
-                            jsPDF: { unit: "px", format: [1271, 2000] }
-                        }).from(CVElem.current).save("curriculum.pdf")} className="download-link hvr-shutter-out-horizontal">Resume PDF</button>
-                        <button onClick={async () => await downloadEuropass()} className="download-link hvr-shutter-out-horizontal">Europass PDF</button>
+                        <a className="download-link hvr-shutter-out-horizontal" href="/curriculum.pdf" download="curriculum.pdf">Resume PDF</a>
+                        <a className="download-link hvr-shutter-out-horizontal" href="/europass_cv.pdf" download="europass_cv.pdf">Europass PDF</a>
                     </div>
                 </div>
-                <HashLink className="scroll-down" title="Scroll Down" to="/#about"><i className="fa fa-circle" aria-hidden="true" /></HashLink>
+                <HashLink smooth className="scroll-down" title="Scroll Down" to="/#about"><i className="fa fa-circle" aria-hidden="true" /></HashLink>
             </div>
         </>
     )

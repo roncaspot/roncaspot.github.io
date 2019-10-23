@@ -14,7 +14,7 @@ export const hobbies = [
     {
         name: "Music & Instruments",
         icon: "fa fa-music",
-        description: "I'm tone-deaf and i love to play guitar and listen to music"
+        description: "I'm tone-deaf. I love to play guitar and listen to music"
     },
     {
         name: "Videogames",
@@ -24,12 +24,12 @@ export const hobbies = [
     {
         name: "Technology and hardware mods",
         icon: "fa fa-microchip",
-        description: "I love technology stuff! I often repair and modding hardware and software of any kind of devices"
+        description: "I love technology stuff! I often repair hardware and software of any kind of device"
     },
     {
         name: "Science",
         icon: "fa fa-flask",
-        description: "I'm a sience fun! i love to pull information from internet about new scientific research"
+        description: "I'm a sience enthusiast! I love to pull information online about new scientific research"
     },
 ]
 
