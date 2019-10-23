@@ -15,6 +15,12 @@ require('@babel/register')({
     ]
 });
 
+require.extensions['.jpg'] = () => {};
+require.extensions['.jpeg'] = () => {};
+require.extensions['.gif'] = () => {};
+require.extensions['.png'] = () => {};
+require.extensions['.svg'] = () => {};
+
 const Sitemap = require("react-router-sitemap").default
 
 var fs = require('fs');

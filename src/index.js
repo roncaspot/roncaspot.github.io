@@ -1,5 +1,5 @@
-import { HWCReact } from "./platform"
-import config from "@this/conf/conf"
+import { HWCReact } from "@hw-core/react-platform"
+import { config } from "./platformConf"
 
 // boot the platform
 HWCReact(config)

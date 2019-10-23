@@ -1,7 +1,8 @@
 import React from 'react';
-import { Switch } from 'react-router';
-import { BrowserRouter as Router } from "react-router-dom";
-import { sEvtMgr, Events } from "@hw-core/react-platform"
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+// we cannot import react-platform index since Router file must be 
+// used by sitemap gen (maybe we need another approach)
+import { sEvtMgr, Events } from "@hw-core/react-platform/src/platform/EventManager"
 
 /**
  * This function is used by our sitemap generator

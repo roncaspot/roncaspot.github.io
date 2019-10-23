@@ -1,5 +1,5 @@
 export default {
-    routerFile: '/src/platform.js', // this file must export routePaths method
+    routerFile: '@this/src/platformConf.js', // this file must export routePaths method
     sitemapFile: 'sitemap.xml',
     sitemapBasePath: './build/',
     injectSitemap: async (Sitemap, app = null) => {

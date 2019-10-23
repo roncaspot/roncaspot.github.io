@@ -4,7 +4,7 @@ import Home from "./routes/Home"
 import Blog from "./routes/Blog/List"
 import Post from "./routes/Blog/Post"
 import Admin from "./routes/Admin"
-import { Route } from 'react-router';
+import { Route } from 'react-router-dom';
 import AppContext from "./App.context"
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
