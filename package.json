@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "prestart": "node ./apps/installer/installer.js",
     "predeploy": "npm run build:ssg",
-    "deploy": "gh-pages -d build -b master",
+    "deploy": "gh-pages -d build -b gh-pages",
     "upgrade-packages": "npx ncu -u"
   },
   "eslintConfig": {
