@@ -119,19 +119,39 @@ export default (props) => {
                         <div className="row">
                             <div className="section-title">
                                 <h4>Skills</h4>
+                                <h5><b>Skill formula:</b> (1 - tanh(expYear / expDecay)) * avg(proficiencyPerc, interestPerc)</h5>
                             </div>
                         </div>
                         <div className="row">
                             {skills.mainSkills.map((main, key) => {
-                                return <div className="col-sm-12">
+                                let maxExp = 0, currentYear = new Date().getFullYear();
+
+                                // experience formula
+                                main.list.forEach(skill => {
+                                    skill.lastYear = skill.lastYear > skill.firstYear ? skill.lastYear : currentYear;
+                                    let expYears = skill.lastYear - skill.firstYear;
+                                    let expDecay = currentYear - skill.lastYear;
+                                    let expMul = expDecay ? 1 - Math.tanh(expYears / expDecay) : 1;
+                                    skill.expValue = (expMul + 1) * ((skill.proficiency + skill.interest) / 2);
+                                    debugger;
+                                    if (skill.expValue > maxExp)
+                                        maxExp = skill.expValue;
+                                });
+
+                                // experience percentage
+                                main.list.forEach(skill => {
+                                    skill.expPercentage = Math.round(skill.expValue / maxExp * 100);
+                                });
+
+                                return <div className="col-sm-12" key={key}>
                                     <h2>{main.name}</h2>
                                     <div className="row">
                                         {chunk(main.list, 6).map((row) => {
                                             return <div className="skill">
                                                 {row.map((skill, key2) => <div className="col-sm-6 skill-bar">
                                                     <div className="progress">
-                                                        <div className="lead"> <i className={skill.icon} aria-hidden="true" /> {skill.name} </div>
-                                                        <div className={"progress-bar " + (!toPrint ? "wow fadeInLeft" : "")} data-progress={skill.value + '%'} style={{ width: skill.value + '%' }} data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>{skill.value + '%'} </span></div>
+                                                        <div className="lead"> <i className={skill.icon} aria-hidden="true" /> {skill.name}: years {skill.firstYear}-{skill.lastYear}, interest: {skill.interest}%, skill: {skill.expPercentage + '%'} </div>
+                                                        <div className={"progress-bar " + (!toPrint ? "wow fadeInLeft" : "")} data-progress={skill.expPercentage + '%'} style={{ width: skill.expPercentage + '%' }} data-wow-duration="1.5s" data-wow-delay="1.2s"></div>
                                                     </div>
                                                 </div>
                                                 )}

@@ -2,9 +2,43 @@ export default [
     {
         "Period": {
             "From": {
-                "Year": 2007
+                "Year": 2019,
+                "Month": 10,
+                "Day": 5
             },
             "Current": true
+        },
+        "Position": {
+            "Label": "Senior Fullstack Developer"
+        },
+        "Activities": `<p>Technologies: NodeJS, 
+        Typescript, GraphQL, Apollo Framework, VueJS 2, PHP Laravel/Lumen,
+         MySQL, Google Cloud, Cloud Run & AppEngine, Firebase, Docker, Gitlab CI/CD, JIIRA, 
+         Google Suite, VSCode, Microservices.</p>`,
+        "Employer": {
+            "Name": "Harlem Next",
+            "ContactInfo": {
+                "Address": {
+                    "Contact": {
+                        "Municipality": "Haarlem",
+                        "Country": {
+                            "Code": "NL",
+                            "Label": "Netherlands"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Period": {
+            "From": {
+                "Year": 2007
+            },
+            "To": {
+                "Year": 2018,
+            },
+            "Current": false
         },
         "Position": {
             "Label": "Founder & Lead Developer"
@@ -22,6 +56,7 @@ export default [
                     "Contact": {
                         "Municipality": "Cava De' Tirreni",
                         "Country": {
+                            "Code": "IT",
                             "Label": "Italia"
                         }
                     }

@@ -5,29 +5,33 @@ import { jsx2Html } from "@this/src/modules/roncaspot/libs/helpers"
 export const skills = {
     mainSkills: [
         {
-            name: "Main Development Skills", icon: "fa fa-code", list: [
-                { name: "JavaScript / NodeJS", value: 95, icon: "fab fa-js" },
-                { name: "ReactJS", value: 90, icon: "fab fa-react" },
-                { name: "GraphQL / Apollo Framework", value: 80, icon: "fa fa-code" },
-                { name: "SQL Databases", value: 86, icon: "fa fa-database" },
-                { name: "TypeScript / Angular", value: 67, icon: "fab fa-angular" },
-                { name: "jQuery", value: 83, icon: "fab fa-js-square" },
-                { name: "HTML & CSS", value: 70, icon: "fab fa-html5" },
-                { name: "Bootstrap framework", value: 78, icon: "fab fa-bootstrap" },
-                { name: "PHP", value: 85, icon: "fab fa-php" },
-                { name: "Symfony framework", value: 76, icon: "fab fa-symfony" },
-                { name: "Testing / Debugging", value: 88, icon: "fas fa-bug" },
-                { name: "C/C++", value: 72, icon: "fa fa-code" },
-                { name: "Docker", value: 85, icon: "fab fa-docker" },
-                { name: "Apache Cordova/Phonegap", value: 80, icon: "fa fa-code" },
-                { name: "Electron", value: 78, icon: "fas fa-atom" },
-                { name: "Bash Language", value: 82, icon: "fa fa-terminal" },
-                { name: "VS / VS Code", value: 90, icon: "fa fa-code" },
-                { name: "Java", value: 68, icon: "fab fa-java" },
+            name: "Main Development Skills", 
+            
+            icon: "fa fa-code", list: [
+                { name: "JavaScript / NodeJS", firstYear: 2011, lastYear: -1, proficiency: 95, interest: 100, icon: "fab fa-js" },
+                { name: "ReactJS", firstYear: 2017, lastYear: -1, proficiency: 95, interest: 90, icon: "fab fa-react" },
+                { name: "GraphQL / Apollo Framework", firstYear: 2018, lastYear: -1, proficiency: 95, interest: 95, icon: "fa fa-code" },
+                { name: "SQL Databases", firstYear: 2006, lastYear: -1, proficiency: 95, interest: 70, icon: "fa fa-database" },
+                { name: "TypeScript", firstYear: 2017, lastYear: -1, proficiency: 50, interest: 90, icon: "fab fa-js" },
+                { name: "jQuery", firstYear: 2011, lastYear: 2016, proficiency: 80, interest: 30, icon: "fab fa-js-square" },
+                { name: "HTML & CSS", firstYear: 2011, lastYear: -1, proficiency: 70, interest: 70, icon: "fab fa-html5" },
+                { name: "Bootstrap framework", firstYear: 2013, lastYear: -1, proficiency: 70, interest: 75, icon: "fab fa-bootstrap" },
+                { name: "PHP", firstYear: 2007, lastYear: -1, proficiency: 95,  interest: 70, icon: "fab fa-php" },
+                { name: "Symfony framework", firstYear: 2016, lastYear: -1, proficiency: 70, interest: 70, icon: "fab fa-symfony" },
+                { name: "Testing / Debugging", firstYear: 2006, lastYear: -1, proficiency: 70, interest: 95, icon: "fas fa-bug" },
+                { name: "C/C++", firstYear: 2006, lastYear: -1, proficiency: 80, interest: 90, icon: "fa fa-code" },
+                { name: "Docker", firstYear: 2016, lastYear: -1, proficiency: 85, interest: 90, icon: "fab fa-docker" },
+                { name: "Apache Cordova/Phonegap", firstYear: 2015, lastYear: 2019, proficiency: 80, interest: 75, icon: "fa fa-code" },
+                { name: "Electron", firstYear: 2015, lastYear: -1, proficiency: 90, interest: 85, icon: "fas fa-atom" },
+                { name: "Bash Language", firstYear: 2009, lastYear: -1, proficiency: 85, interest: 85, icon: "fa fa-terminal" },
+                { name: "Java", firstYear: 2007, lastYear: 2017, proficiency: 70, interest: 60, icon: "fab fa-java" },
+                { name: "VueJS", firstYear: 2019, lastYear: -1, proficiency: 85, interest: 85, icon: "fab fa-vuejs" },
+                { name: "Angular", firstYear: 2014, lastYear: 2017, proficiency: 70, interest: 80, icon: "fab fa-angular" }
             ]
         },
     ],
     secondarySkills: [
+        { name: "Google Cloud Platform" },
         { name: "Webmin" },
         { name: "Proxmox" },
         { name: "Python" },
@@ -43,6 +47,7 @@ export const skills = {
         { name: "TCL" },
         { name: "Matlab / Octave" },
         { name: "Android Studio" },
+        { name: "VS / VSCode" },
         { name: "Delphi" }
     ]
 }
@@ -59,7 +64,7 @@ export const services = [
         name: "DevOps & System Admin",
         icon: "fa fa-cogs",
         description: `I can setup complex local and virtual networks on Linux OS. 
-            I love to dockerize applications and use container to create high-performance inftrastructures.
+            I love to dockerize applications and use containers to create high-performance inftrastructures.
         `
     },
     {
@@ -84,10 +89,10 @@ export const SoftSkills = [
         value: 75,
         description: <>
             <ul>
-                <li>Good communication skills acquired during salesperson job with an insurance company
-            after a series of meetings.</li>
                 <li><strong>05/03/2015 </strong> - Seminar speaker on modular & distributed systems and virtual reality</li>
                 <li><strong>09/2018 - 01/2019</strong> - Manager & Main Speaker on Enterprise Programming Seminar</li>
+                <li>Good communication skills acquired during salesperson job for an insurance company.</li>
+                <li>I've managed several big MMO communities acquiring good communication skills</li>
             </ul>
         </>
     },
@@ -96,15 +101,10 @@ export const SoftSkills = [
         icon: "fa fa-sitemap",
         value: 90,
         description: <>
-            <p>Experience as administrator of teams related to MMORPG community
-                <br />Manager and Lead Programmer of MMO Server Development Team.
-                <br />I have an efficient research method for information on the Internet.
+            <p>Experiences as Project Manager and Scrum Master for several teams.
                 <br />I really believe in the importance of intercommunication and project documentation.
-                <br />
-                I am a big fan of version control systems for team and personal development.
-                <br />
-                I love to find solutions to any kind of problem.
-                </p>
+                <br /> I am a big fan of version control systems and organizational boards for team and personal development.
+            </p>
         </>
     },
     {

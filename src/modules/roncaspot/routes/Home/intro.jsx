@@ -26,7 +26,7 @@ export default (props) => {
                             <span id="typed" style={{ whiteSpace: 'pre' }} />
                         </div>
                         <a className="download-link hvr-shutter-out-horizontal" href="/curriculum.pdf" download="curriculum.pdf">Resume PDF</a>
-                        <a className="download-link hvr-shutter-out-horizontal" href="/europass_cv.pdf" download="europass_cv.pdf">Europass PDF</a>
+                        {/*<a className="download-link hvr-shutter-out-horizontal" href="/europass_cv.pdf" download="europass_cv.pdf">Europass PDF</a>*/}
                     </div>
                 </div>
                 <HashLink smooth className="scroll-down" title="Scroll Down" to="/#about"><i className="fa fa-circle" aria-hidden="true" /></HashLink>

@@ -249,7 +249,7 @@ export default {
                     "ForeignLanguage": [
                         {
                             "Description": {
-                                "__hwc_value": 70,
+                                "__hwc_value": 80,
                                 "Code": "en",
                                 "Label": "English"
                             },
@@ -263,7 +263,7 @@ export default {
                         },
                         {
                             "Description": {
-                                "__hwc_value": 30,
+                                "__hwc_value": 20,
                                 "Code": "es",
                                 "Label": "Spanish"
                             },
@@ -277,7 +277,7 @@ export default {
                         },
                         {
                             "Description": {
-                                "__hwc_value": 20,
+                                "__hwc_value": 10,
                                 "Code": "fr",
                                 "Label": "French"
                             },

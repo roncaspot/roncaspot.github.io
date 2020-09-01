@@ -18,9 +18,10 @@ export default () => {
     <br />          thousands of active users such as <a href="http://azerothcore.org">AzerothCore</a>
             <br />    I had an experience as the <b>Manager</b> of my personal organizations
                 (<a href="http://www.hyperweb2.com/">Hyperweb2</a>, <a href="http://www.drassil.org/">Drassil</a>).
-    <br />    I've recently organized <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/pg/redsquarelab/photos/?ref=page_internal">15 days of seminars</a> about <b>ReactJS and NodeJS</b>,
+    <br />    I've organized <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/pg/redsquarelab/photos/?ref=page_internal">15 days of seminars</a> about <b>ReactJS and NodeJS</b>,
                 with which I've created a team of 6 freelancers, the <a href="https://www.redsquareteam.eu/">Red Square team</a>. We've worked on various enterprise projects for which I played the role of both PM
 and Lead Developer.
+<br/> Currently I'm working for an international company in The Netherlands to move up with my career in this challenging and amazing environment.
     <br /> <b>I always look for perfect, effective and practical solutions to any potential problem.</b>
         </p>
         <p style={{ fontSize: "1em", fontStyle: "Italic" }}>Note: This template has been built using following tools:
