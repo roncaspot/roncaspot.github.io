@@ -20,8 +20,8 @@ export default (props) => {
                         <div className="type-wrap">
                             <div id="typed-strings">
                                 <span>Software Engineer</span>
-                                <span>UX / UI Developer</span>
-                                <span>Frontend / Backend  Developer</span>
+                                <span>Full-Stack Developer</span>
+                                <span>Team Leader</span>
                             </div>
                             <span id="typed" style={{ whiteSpace: 'pre' }} />
                         </div>

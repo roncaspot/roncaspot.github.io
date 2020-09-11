@@ -160,8 +160,8 @@ export default {
                 "ContactInfo": {
                     "Address": {
                         "Contact": {
-                            "AddressLine": "Zijhuizen 5",
-                            "PostalCode": "2011",
+                            "AddressLine": "Botermarkt 25a",
+                            "PostalCode": "2011 XL",
                             "Municipality": "Haarlem",
                             "Country": {
                                 "Label": "The Netherlands"

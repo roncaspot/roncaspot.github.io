@@ -9,7 +9,7 @@ export const hobbies = [
     {
         name: "Photography",
         icon: "fa fa-camera",
-        description: "I love to take foto at world's beatiful things and places with my Lumix DSLR. I Love movies and any kind of visual art"
+        description: "I love to take photos at world's beatiful things and places with my Lumix DSLR. I Love movies and any kind of visual art"
     },
     {
         name: "Music & Instruments",
@@ -29,7 +29,7 @@ export const hobbies = [
     {
         name: "Science",
         icon: "fa fa-flask",
-        description: "I'm a sience enthusiast! I love to pull information online about new scientific research"
+        description: "I'm a science enthusiast! I love to pull information online about new scientific research"
     },
 ]
 
