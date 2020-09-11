@@ -5,7 +5,7 @@ export default () => {
     var now = new Date().getFullYear();
 
     return <><p>
-        I'm a  <b>Software Engineer</b> with a Bachelor's degree in Information Technology.
+        I'm a  <b>Software Engineer</b> with a Bachelor's Degree in Information Technology.
         <br /><b>I've {now - start} years of experience in software development and
         I usually spend most of my time exploring, making research and working in this field</b></p>
         <p>

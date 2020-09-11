@@ -1,26 +1,24 @@
 import React from "react"
 
-import Data from "./data/data.jsx"
-import { hobbies } from "./data/hobbies"
+import data from "@this/src/modules/roncaspot/data/curriculum/data.jsx"
+import { hobbies } from "@this/src/modules/roncaspot/data/curriculum/hobbies"
 
-import SignImg from "../../../data/pictures/sign.png"
-import BigAvatar from "../../../data/pictures/big_avatar.jpg"
+import SignImg from "@this/src/modules/roncaspot/data/pictures/sign.png"
+import BigAvatar from "@this/src/modules/roncaspot/data/pictures/big_avatar.jpg"
 
 import { chunk, html } from "@this/src/modules/roncaspot/libs/helpers"
 
-import { services, SoftSkills, skills } from "./data/skills"
-import { achievements } from "./data/achievements"
-import AboutDescr from "./data/about_descr"
-import OtherExp from "./data/experiences/other"
+import { services, SoftSkills, skills } from "@this/src/modules/roncaspot/data/curriculum/skills"
+import { achievements } from "@this/src/modules/roncaspot/data/curriculum/achievements"
+import AboutDescr from "@this/src/modules/roncaspot/data/curriculum/about_descr"
+import OtherExp from "@this/src/modules/roncaspot/data/curriculum/experiences/other"
 
-var SkillsPassport = Data.SkillsPassport;
-var LearnerInfo = SkillsPassport.LearnerInfo;
-var Identification = LearnerInfo.Identification;
+var Identification = data.Identification;
 var BirthDate = Identification.Demographics.Birthdate;
 var Address = Identification.ContactInfo.Address.Contact;
-var WorkExperiences = LearnerInfo.WorkExperience;
-var Educations = LearnerInfo.Education;
-var Skills = LearnerInfo.Skills;
+var WorkExperiences = data.WorkExperience;
+var Educations = data.Education;
+var Skills = data.Skills;
 var Languages = Skills.Linguistic.MotherTongue.concat(Skills.Linguistic.ForeignLanguage)
 
 export default (props) => {
@@ -32,7 +30,7 @@ export default (props) => {
             <div ref={props.innerRef}>
                 {/* START HOME SECTION*/}
                 {/* START ABOUT SECTION*/}
-                <section id="about" className={"section " + (!toPrint ? "wow fadeInUpBig" : "")}>
+                <section id="about" className={!toPrint ? "section wow fadeInUpBig" : ""}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -114,7 +112,7 @@ export default (props) => {
                 </section>
                 {/* END ABOUT SECTION*/}
                 {/* START SKILLS SECTION*/}
-                <section id="skills" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="skills" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -209,7 +207,7 @@ export default (props) => {
                 </section>
                 {/* END SKILLS SECTION*/}
                 {/* START SERVICES SECTION*/}
-                <section id="services" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="services" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -233,7 +231,7 @@ export default (props) => {
                 </section>
                 {/* END SERVICES SECTION*/}
                 {/* START ACHIEVEMENTS SECTION*/}
-                <section id="achievements" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="achievements" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -266,7 +264,7 @@ export default (props) => {
                 </section>
                 {/* END ACHIEVEMENTS SECTION*/}
                 {/* START HOBBIES SECTION */}
-                <section id="hobbies" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="hobbies" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -292,7 +290,7 @@ export default (props) => {
                 </section>
                 {/* END HOBBIES SECTION */}
                 {/* START RESUMES SECTION*/}
-                <section id="resumes" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="resumes" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -300,16 +298,16 @@ export default (props) => {
                             </div>
                         </div>
                         <div className="resume-section education">
-                            <div className="timeline-container">
+                            <div className={(!toPrint ? "timeline-container" : "")}>
                                 {WorkExperiences.map((value, key) => {
                                     const effect = key % 2 === 0 ? "fadeInLeft" : "fadeInRight"
 
                                     return <div className={"timeline-block " + (!toPrint ? "wow " + effect : "")}>
-                                        <div className="timeline-img" data-anim-effect="zoomIn">
+                                        {toPrint || <div className="timeline-img" data-anim-effect="zoomIn">
                                             <i>{value.Period.Current ? "Now" : value.Period.To.Year} </i>
-                                        </div>
+                                        </div>}
                                         <div className="timeline-content" data-anim-effect={effect}>
-                                            <h2>{value.Employer.Name} ({value.Period.From.Year} {!value.Period.Current && " - " + value.Period.To.Year})</h2>
+                                            <h2>{value.Employer.Name} ({value.Period.Current && "Since "}{value.Period.From.Year}{!value.Period.Current && " - " + value.Period.To.Year})</h2>
                                             <p style={{ fontWeight: "bold" }}>Role: {value.Position.Label}</p>
                                             {html(value.Activities)}
                                         </div>
@@ -319,7 +317,7 @@ export default (props) => {
                         </div>
                     </div>
                 </section>
-                <section id="other-experiences" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="other-experiences" className={"section" + (!toPrint ? " wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -333,7 +331,7 @@ export default (props) => {
                 </section>
                 {/* END RESUMES SECTION*/}
                 {/* START EDUCATION SECTION*/}
-                <section id="education" className={"section " + (!toPrint ? "wow fadeInUp" : "")}>
+                <section id="education" className={(!toPrint ? "section wow fadeInUp" : "")}>
                     <div className="container-section">
                         <div className="row">
                             <div className="section-title">
@@ -341,14 +339,14 @@ export default (props) => {
                             </div>
                         </div>
                         <div className="resume-section education">
-                            <div className="timeline-container">
+                            <div className={(!toPrint ? "timeline-container" : "")}>
                                 {Educations.map((value, key) => {
                                     const effect = key % 2 === 0 ? "fadeInLeft" : "fadeInRight"
 
                                     return <div className={"timeline-block " + (!toPrint ? "wow " + effect : "")}>
-                                        <div className="timeline-img" data-anim-effect="zoomIn">
+                                        {toPrint || <div className="timeline-img" data-anim-effect="zoomIn">
                                             <i>{value.Period.Current ? "Now" : value.Period.To.Year} </i>
-                                        </div>
+                                        </div>}
                                         <div className="timeline-content" data-anim-effect={effect}>
                                             <h2>{value.Organisation.Name} - {value.Title} ({value.Period.From.Year} {!value.Period.Current && " - " + value.Period.To.Year})</h2>
                                             <p>{html(value.Activities)}</p>

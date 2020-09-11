@@ -1,6 +1,6 @@
-import CryptoJpg from "../../../../data/pictures/achi-crypto.jpg"
-import RSTJpg from "../../../../data/pictures/achi-redsquarelab.jpg"
-import RoncaspotPNG from "../../../../data/pictures/achi-roncaspot.png"
+import CryptoJpg from "../pictures/achi-crypto.jpg"
+import RSTJpg from "../pictures/achi-redsquarelab.jpg"
+import RoncaspotPNG from "../pictures/achi-roncaspot.png"
 
 export const achievements = [
     {

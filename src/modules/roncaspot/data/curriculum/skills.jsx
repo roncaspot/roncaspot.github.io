@@ -21,7 +21,7 @@ export const skills = {
                 { name: "Testing / Debugging", firstYear: 2006, lastYear: -1, proficiency: 70, interest: 95, icon: "fas fa-bug" },
                 { name: "C/C++", firstYear: 2006, lastYear: -1, proficiency: 80, interest: 90, icon: "fa fa-code" },
                 { name: "Docker", firstYear: 2016, lastYear: -1, proficiency: 85, interest: 90, icon: "fab fa-docker" },
-                { name: "Apache Cordova/Phonegap", firstYear: 2015, lastYear: 2019, proficiency: 80, interest: 75, icon: "fa fa-code" },
+                { name: "Cordova/Phonegap", firstYear: 2015, lastYear: 2019, proficiency: 80, interest: 75, icon: "fa fa-code" },
                 { name: "Electron", firstYear: 2015, lastYear: -1, proficiency: 90, interest: 85, icon: "fas fa-atom" },
                 { name: "Bash Language", firstYear: 2009, lastYear: -1, proficiency: 85, interest: 85, icon: "fa fa-terminal" },
                 { name: "Java", firstYear: 2007, lastYear: 2017, proficiency: 70, interest: 60, icon: "fab fa-java" },

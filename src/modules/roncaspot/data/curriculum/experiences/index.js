@@ -46,11 +46,13 @@ export default [
         "Activities": `<p>HyperWeb2 is a brand that since 2007 has been dealing with software development, 
                         consulting and technical assistance.
                         Aiming for quality and the continuous search for perfection.
-                        I've developed dozens of Web sites and Mobile Applications with PHP or Nodejs/ReactJS Server
-                        for national and international customers.
-                        <br/>Website: <a href="http://www.hyperweb2.com">http://www.hyperweb2.com</a></p>`,
+                        I've developed dozens of Web sites and Mobile Applications with PHP or Nodejs/ReactJS
+                        for international customers. In 2017 I've created the RedSquare Team thanks to a seminar
+                        organized at the Salerno University. It has been a team of 6 freelancers selectively chosen
+                        to face the of working on several projects from some companies of the Boston area. 
+                        <br/>Website: <a href="http://www.hyperweb2.com">http://www.hyperweb2.com</a> - <a href="https://sites.google.com/view/redsquarelab/home">RST Team</a></p>`,
         "Employer": {
-            "Name": "HyperWeb2",
+            "Name": "HyperWeb2 - RedSquare Team",
             "ContactInfo": {
                 "Address": {
                     "Contact": {
