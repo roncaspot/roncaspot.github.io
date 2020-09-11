@@ -1117,7 +1117,7 @@ twke3 img {
   color: #e1e1e1;
 }
 .grid figure figcaption {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(2, 53, 15, 0.9);
   padding: 1em;
   color: #fff;
   /*text-transform: uppercase;*/
