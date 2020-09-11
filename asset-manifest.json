@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.13f7d290.chunk.js",
-    "main.js.map": "/static/js/main.13f7d290.chunk.js.map",
+    "main.js": "/static/js/main.a536c72f.chunk.js",
+    "main.js.map": "/static/js/main.a536c72f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8451cb30.js",
     "runtime-main.js.map": "/static/js/runtime-main.8451cb30.js.map",
     "static/js/2.652b7499.chunk.js": "/static/js/2.652b7499.chunk.js",
     "static/js/2.652b7499.chunk.js.map": "/static/js/2.652b7499.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ab491644edef71c05eb921119143dbf1.js": "/precache-manifest.ab491644edef71c05eb921119143dbf1.js",
+    "precache-manifest.5573ddccb8987c8ddc864a02e3325917.js": "/precache-manifest.5573ddccb8987c8ddc864a02e3325917.js",
     "service-worker.js": "/service-worker.js",
     "static/media/achi-crypto.jpg": "/static/media/achi-crypto.b04cb887.jpg",
     "static/media/achi-redsquarelab.jpg": "/static/media/achi-redsquarelab.c4e723af.jpg",
@@ -20,6 +20,6 @@
   "entrypoints": [
     "static/js/runtime-main.8451cb30.js",
     "static/js/2.652b7499.chunk.js",
-    "static/js/main.13f7d290.chunk.js"
+    "static/js/main.a536c72f.chunk.js"
   ]
 }

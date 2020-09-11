@@ -52,7 +52,7 @@ $(function () {
                 }
                 return false;
             }
-        });
+        });*/
 
         $('body').scrollspy({
             target: '.menu_area',
@@ -64,7 +64,7 @@ $(function () {
             } else {
                 $('.menu_area').removeClass('shrink');
             }
-        });*/
+        });
 
         /*************************
          Responsive Menu
