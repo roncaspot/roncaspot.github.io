@@ -8,11 +8,11 @@ export const skills = {
             name: "Main Development Skills", 
             
             icon: "fa fa-code", list: [
+                { name: "TypeScript & NestJS", firstYear: 2017, lastYear: -1, proficiency: 90, interest: 100, icon: "fab fa-js" },
                 { name: "JavaScript / NodeJS", firstYear: 2011, lastYear: -1, proficiency: 95, interest: 100, icon: "fab fa-js" },
                 { name: "ReactJS", firstYear: 2017, lastYear: -1, proficiency: 95, interest: 90, icon: "fab fa-react" },
                 { name: "GraphQL / Apollo Framework", firstYear: 2018, lastYear: -1, proficiency: 95, interest: 95, icon: "fa fa-code" },
                 { name: "SQL Databases", firstYear: 2006, lastYear: -1, proficiency: 95, interest: 70, icon: "fa fa-database" },
-                { name: "TypeScript", firstYear: 2017, lastYear: -1, proficiency: 50, interest: 90, icon: "fab fa-js" },
                 { name: "jQuery", firstYear: 2011, lastYear: 2016, proficiency: 80, interest: 30, icon: "fab fa-js-square" },
                 { name: "HTML & CSS", firstYear: 2011, lastYear: -1, proficiency: 70, interest: 70, icon: "fab fa-html5" },
                 { name: "Bootstrap framework", firstYear: 2013, lastYear: -1, proficiency: 70, interest: 75, icon: "fab fa-bootstrap" },
