@@ -49,7 +49,7 @@ jobs:
           sudo apt-get install -y libgbm1
           git config --global user.name "Yehonal"
           git config --global user.email "yehonal.azeroth@gmail.com"
-          git remote set-url origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/roncaspot/roncaspot.github.io.git
+          git remote set-url origin https://${GITHUB_ACTOR}:${PUBLISH_TOKEN}@github.com/roncaspot/roncaspot.github.io.git
           npm install
           npm run build
           npm run deploy
