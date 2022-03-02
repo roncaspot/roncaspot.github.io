@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import AvatarPng from "../../data/pictures/avatar.png"
 
 export default (props) => {
-    var CVElem = useRef(null);
+    //var CVElem = useRef(null);
 
     return (
         <>
