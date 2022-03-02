@@ -47,6 +47,7 @@ jobs:
         run: |
           git config --global user.name "Yehonal"
           git config --global user.email "yehonal.azeroth@gmail.com"
+          npm install
           npm run build
           npm run deploy
 
