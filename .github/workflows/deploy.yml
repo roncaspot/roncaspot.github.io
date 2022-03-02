@@ -49,8 +49,13 @@ jobs:
           sudo apt-get install -y libgbm1
           git config --global user.name "Yehonal"
           git config --global user.email "yehonal.azeroth@gmail.com"
-          git remote set-url origin https://${GITHUB_ACTOR}:${PUBLISH_TOKEN}@github.com/roncaspot/roncaspot.github.io.git
           npm install
           npm run build
-          npm run deploy
+          npm run build:ssg
+      - name: Deploy to GH Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: build
+          clean: true # Automatically remove deleted files from the deploy branch
 
