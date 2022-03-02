@@ -45,6 +45,8 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
       - name: Build app
         run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm1
           git config --global user.name "Yehonal"
           git config --global user.email "yehonal.azeroth@gmail.com"
           npm install
