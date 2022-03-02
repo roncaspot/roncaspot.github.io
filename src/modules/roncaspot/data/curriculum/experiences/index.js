@@ -2,11 +2,47 @@ export default [
     {
         "Period": {
             "From": {
+                "Year": 2020,
+                "Month": 11,
+                "Day": 1
+            },
+            "Current": true
+        },
+        "Position": {
+            "Label": "Tech Lead"
+        },
+        "Activities": `<p>Technologies: Typescript, NestJS, GraphQL Federation, 
+        AWS serverless, ReactJS, VueJS, Kafka, Docker, Gitlab CI/CD,
+        AGILE Scrum
+        <p>`,
+        "Employer": {
+            "Name": "Bitvavo",
+            "ContactInfo": {
+                "Address": {
+                    "Contact": {
+                        "Municipality": "Amsterdam",
+                        "Country": {
+                            "Code": "NL",
+                            "Label": "Netherlands"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Period": {
+            "From": {
                 "Year": 2019,
                 "Month": 10,
                 "Day": 5
             },
-            "Current": true
+            "To": {
+                "Year": 2020,
+                "Month": 8,
+                "Day": 1
+            },
+            "Current": false
         },
         "Position": {
             "Label": "Senior Fullstack Developer"
