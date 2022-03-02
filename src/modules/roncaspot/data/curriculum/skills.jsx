@@ -32,6 +32,7 @@ export const skills = {
     ],
     secondarySkills: [
         { name: "Google Cloud Platform" },
+        { name: "AWS" },
         { name: "Webmin" },
         { name: "Proxmox" },
         { name: "Python" },

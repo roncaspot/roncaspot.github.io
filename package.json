@@ -18,7 +18,7 @@
     "docker:remove": "node run docker:remove",
     "docker:stop": "node run docker:stop",
     "build": "craco build --config cra-config.js",
-    "build:ssg": "npm run build && npx react-snap",
+    "build:ssg": "npm run build && npx react-spa-prerender",
     "test": "craco test --config cra-config.js",
     "eject": "react-scripts eject",
     "prestart": "node ./apps/installer/installer.js",
