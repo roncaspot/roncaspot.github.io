@@ -33,7 +33,6 @@ export default {
         "ContactInfo": {
             "Address": {
                 "Contact": {
-                    "AddressLine": "Botermarkt 25a",
                     "PostalCode": "2011 XL",
                     "Municipality": "Haarlem",
                     "Country": {
@@ -46,7 +45,7 @@ export default {
             },
             "Telephone": [
                 {
-                    "Contact": "(+39) 3478147424",
+                    "Contact": "(+31) 644164894",
                     "Use": {
                         "Code": "mobile",
                         "Label": "Mobile"
