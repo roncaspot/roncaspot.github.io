@@ -1,31 +1,30 @@
 version: '3.7'
 services:
   node-client:
+    command: npm run start
     restart: unless-stopped
-    command: tail -f /dev/null
-    image: node:10
+    image: roncaspot.github.io
+    build:
+      context: .
     volumes:
       - type: bind
         source: .
         target: /usr/src/service
-      - type: volume
-        source: node_modules
-        target: /usr/src/service/node_modules
-        volume:
-          nocopy: true
+      # restore node_modules
+      - /usr/src/service/node_modules
     working_dir: /usr/src/service
+    user: node
     environment:
       - CHOKIDAR_USEPOLLING=true
       - PORT=443
       - HTTPS=true
     networks:
       - local-shared-net
+    ports:
+      - ${DOCKER_NODE_CLIENT_PORT:-44003}:443
     expose:
       - "80"
       - "443"
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=local-shared-net
 volumes:
   node_modules:
 networks:

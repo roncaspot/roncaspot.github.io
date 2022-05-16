@@ -103,3 +103,5 @@ yarn-error.log*
 !/src/conf/dist
 
 package-lock.json
+
+.env

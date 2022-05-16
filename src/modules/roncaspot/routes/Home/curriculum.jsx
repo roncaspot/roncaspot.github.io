@@ -131,7 +131,7 @@ export default (props) => {
                                     let expDecay = currentYear - skill.lastYear;
                                     let expMul = expDecay ? 1 - Math.tanh(expYears / expDecay) : 1;
                                     skill.expValue = (expMul + 1) * ((skill.proficiency + skill.interest) / 2);
-                                    debugger;
+
                                     if (skill.expValue > maxExp)
                                         maxExp = skill.expValue;
                                 });
