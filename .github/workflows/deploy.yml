@@ -51,7 +51,7 @@ jobs:
           git config --global user.email "yehonal.azeroth@gmail.com"
           npm install
           npm run build
-          npm run build:ssg
+        # npm run build:ssg
       - name: Deploy to GH Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
