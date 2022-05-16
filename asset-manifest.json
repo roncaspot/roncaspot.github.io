@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.2eaa4c0b.chunk.js",
-    "main.js.map": "/static/js/main.2eaa4c0b.chunk.js.map",
+    "main.js": "/static/js/main.008c636d.chunk.js",
+    "main.js.map": "/static/js/main.008c636d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8451cb30.js",
     "runtime-main.js.map": "/static/js/runtime-main.8451cb30.js.map",
-    "static/js/2.0e8a1d3b.chunk.js": "/static/js/2.0e8a1d3b.chunk.js",
-    "static/js/2.0e8a1d3b.chunk.js.map": "/static/js/2.0e8a1d3b.chunk.js.map",
+    "static/js/2.20f363f4.chunk.js": "/static/js/2.20f363f4.chunk.js",
+    "static/js/2.20f363f4.chunk.js.map": "/static/js/2.20f363f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.eea15f247bc645bae94a13083c7483ee.js": "/precache-manifest.eea15f247bc645bae94a13083c7483ee.js",
+    "precache-manifest.d316295e79eaa1e432e0ac376a4b2878.js": "/precache-manifest.d316295e79eaa1e432e0ac376a4b2878.js",
     "service-worker.js": "/service-worker.js",
+    "static/media/about_descr.md": "/static/media/about_descr.45cd841e.md",
     "static/media/achi-crypto.jpg": "/static/media/achi-crypto.b04cb887.jpg",
     "static/media/achi-redsquarelab.jpg": "/static/media/achi-redsquarelab.c4e723af.jpg",
     "static/media/achi-roncaspot.png": "/static/media/achi-roncaspot.13400986.png",
@@ -19,7 +20,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8451cb30.js",
-    "static/js/2.0e8a1d3b.chunk.js",
-    "static/js/main.2eaa4c0b.chunk.js"
+    "static/js/2.20f363f4.chunk.js",
+    "static/js/main.008c636d.chunk.js"
   ]
 }
