@@ -33,6 +33,6 @@ Nowadays instead, I'm working for an international company in The Netherlands to
 Besides my job, I love to travel, taking pictures, and learn as much as I can. 
 
 
-Note: This template has been built using the following tools:  
+Note: [This template is hosted on github](https://github.com/roncaspot/roncaspot.github.io) and has been built using the following tools:  
 **Personal:** [Universal-PWA Framework (based on ReactJS)](https://github.com/HW-Core/universal-pwa) ;  
 **3rd party:** jsPDF, wow.js, fontawesome.js, bootstrap.js, jquery
