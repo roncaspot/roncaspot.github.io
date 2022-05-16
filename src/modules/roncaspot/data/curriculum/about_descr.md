@@ -14,7 +14,7 @@ I've been responsible for the development of modular software architectures by:
 * Using cloud solutions such as GCP, AWS, Proxmox and self-hosted software such as Sentry, ArgoCD, Grafana etc.
 * Orchestrating containers remotely and locally with Kubernetes and docker-compose
 * Streaming events between services with Kafka, Google Pubsub, AWS SQS
-* Doing the off-the-shelf for a new project since I've worked in both the frontend and the backend with different kinds of languages including Typescript, PHP, Java, C++ etc. Also, I worked with many very known libraries and frameworks such as NestJS, NextJS, React, VueJS, Angular, Symfony, Laravel, Lumen, Boost etc.
+* Doing the off-the-shelf for a new project since I've worked in both the frontend and the backend with different kinds of languages including Typescript, PHP, Java, C++ etc. Also, I worked with many well-known libraries and frameworks such as NestJS, NextJS, React, VueJS, Angular, Symfony, Laravel, Lumen, Boost etc.
 * Storing data on different DBMS such as MySQL (that I master), MongoDB, SQLLite, Redis and Firebase.
 
 I love to produce high-quality software and **I always look for perfect, effective and practical solutions to any potential problem.**
