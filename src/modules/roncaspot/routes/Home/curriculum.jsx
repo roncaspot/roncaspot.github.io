@@ -58,13 +58,13 @@ export default (props) => {
                                             {Identification.ContactInfo.Email.Contact}
                                         </div>
                                     </div>
-                                    <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
+                                    {/* <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"><i className="fas fa-phone-volume" aria-hidden="true" /></div>
                                         <div className="info-text">
                                             <span><strong>Phone</strong></span>
                                             {Identification.ContactInfo.Telephone[0].Contact}
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"> <i className="fa fa-calendar" aria-hidden="true" /></div>
                                         <div className="info-text">

@@ -45,7 +45,7 @@ export default {
             },
             "Telephone": [
                 {
-                    "Contact": "(+31) 644164894",
+                    "Contact": "(+XX) XXXXXX",
                     "Use": {
                         "Code": "mobile",
                         "Label": "Mobile"
