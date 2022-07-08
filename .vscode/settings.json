@@ -1,8 +1,8 @@
 {
-  "editor.autoIndent": false,
+  "editor.autoIndent": "advanced",
   "editor.fontSize": 15,
   "[yaml]": {
-    "editor.autoIndent": false
+    "editor.autoIndent": "advanced"
   },
   "npm-intellisense.importES6": true,
   "npm-intellisense.scanDevDependencies": true

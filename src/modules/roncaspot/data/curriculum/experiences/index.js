@@ -1,3 +1,5 @@
+import bitvavoMd from "./bitvavo.md";
+
 export default [
     {
         "Period": {
@@ -11,10 +13,7 @@ export default [
         "Position": {
             "Label": "Tech Lead"
         },
-        "Activities": `<p>Technologies: Typescript, NestJS, GraphQL Federation, 
-        AWS serverless, ReactJS, VueJS, Kafka, Docker, Gitlab CI/CD,
-        AGILE Scrum
-        <p>`,
+        "Activities": bitvavoMd,
         "Employer": {
             "Name": "Bitvavo",
             "ContactInfo": {

@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMarkdown from "react-markdown";
 
 import data from "@this/src/modules/roncaspot/data/curriculum/data.jsx"
 import { hobbies } from "@this/src/modules/roncaspot/data/curriculum/hobbies"
@@ -309,7 +310,7 @@ export default (props) => {
                                         <div className="timeline-content" data-anim-effect={effect}>
                                             <h2>{value.Employer.Name} ({value.Period.Current && "Since "}{value.Period.From.Year}{!value.Period.Current && " - " + value.Period.To.Year})</h2>
                                             <p style={{ fontWeight: "bold" }}>Role: {value.Position.Label}</p>
-                                            {html(value.Activities)}
+                                            {<ReactMarkdown linkTarget="_blank" children={html(value.Activities)} />}
                                         </div>
                                     </div>
                                 })}
