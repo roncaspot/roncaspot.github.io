@@ -971,6 +971,11 @@ twke3 img {
   padding: 0;
   width: 80%;
 }
+
+.timeline-container .timeline-block .timeline-description {
+  padding: 10px
+}
+
 @media (min-width: 1170px) {
   .timeline-container .timeline-block .timeline-content {
     margin-left: 0;
