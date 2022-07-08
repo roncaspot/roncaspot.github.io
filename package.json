@@ -78,7 +78,8 @@
     "react-html2pdf": "^1.0.1",
     "react-markdown": "^8.0.3",
     "react-router-dom": "^5.1.2",
-    "reactstrap": "^8.0.1"
+    "reactstrap": "^8.0.1",
+    "rehype-raw": "^6.1.1"
   },
   "_moduleAliases": {
     "@this/src": "src",
