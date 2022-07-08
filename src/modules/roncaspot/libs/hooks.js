@@ -8,6 +8,7 @@ export function useMarkdownContent(markdown, replacements) {
             .then((res) => res.text())
             .then((mdRaw) => {
 
+
                 const md = mdRaw.replace(
                     /%(\w+)%/g,
                     (placeholderWithDelimiters, placeholderWithoutDelimiters) =>
@@ -20,7 +21,8 @@ export function useMarkdownContent(markdown, replacements) {
 
                 setContent({ md });
             });
-    }, [markdown, replacements]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [content.md, markdown]);
 
     return content;
 }
