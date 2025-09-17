@@ -440,7 +440,7 @@ export default (props) => {
                                         (!toPrint ? "wow fadeInUp" : "")
                                     }
                                 >
-                                    <div className="row">
+                                    {/* <div className="row">
                                         {Languages.map((value, key) => {
                                             return (
                                                 <div className="col-sm-3">
@@ -475,7 +475,7 @@ export default (props) => {
                                                 </div>
                                             );
                                         })}
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
