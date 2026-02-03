@@ -431,7 +431,7 @@ export default (props) => {
                                 })}
                             </div>
                         </div>
-                        <div className="row skill-language">
+                        {/* <div className="row skill-language">
                             <h2>LANGUAGE SKILLS &amp; KNOWLEDGE</h2>
                             <div className="col-sm-12">
                                 <div
@@ -440,7 +440,7 @@ export default (props) => {
                                         (!toPrint ? "wow fadeInUp" : "")
                                     }
                                 >
-                                    {/* <div className="row">
+                                    <div className="row">
                                         {Languages.map((value, key) => {
                                             return (
                                                 <div className="col-sm-3">
@@ -475,11 +475,11 @@ export default (props) => {
                                                 </div>
                                             );
                                         })}
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>*/}
+                    </div> 
                 </section>
                 {/* END SKILLS SECTION*/}
                 {/* START SERVICES SECTION*/}

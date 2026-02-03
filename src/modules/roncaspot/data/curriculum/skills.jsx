@@ -13,7 +13,7 @@ export const skills = {
                 { name: "ReactJS", firstYear: 2017, lastYear: -1, proficiency: 95, interest: 90, icon: "fab fa-react" },
                 { name: "GraphQL / Apollo Framework", firstYear: 2018, lastYear: -1, proficiency: 95, interest: 95, icon: "fa fa-code" },
                 { name: "SQL Databases", firstYear: 2006, lastYear: -1, proficiency: 95, interest: 70, icon: "fa fa-database" },
-                { name: "Kafka", firstYear: 2021, lastYear: -1, proficiency: 50, interest: 70, icon: "fa fa-code" },
+                { name: "AWS Cloud", firstYear: 2021, lastYear: -1, proficiency: 70, interest: 85, icon: "fab fa-aws" },
                 { name: "CI/CD Pipeline", firstYear: 2016, lastYear: -1, proficiency: 90, interest: 90, icon: "fab fa-github" },
                 { name: "PHP & Frameworks", firstYear: 2007, lastYear: -1, proficiency: 95,  interest: 70, icon: "fab fa-php" },
                 { name: "Testing / Debugging", firstYear: 2006, lastYear: -1, proficiency: 70, interest: 95, icon: "fas fa-bug" },
@@ -21,8 +21,8 @@ export const skills = {
                 { name: "Docker", firstYear: 2016, lastYear: -1, proficiency: 85, interest: 90, icon: "fab fa-docker" },
                 { name: "Bash Language", firstYear: 2009, lastYear: -1, proficiency: 85, interest: 85, icon: "fa fa-terminal" },
                 { name: "Java", firstYear: 2007, lastYear: 2017, proficiency: 70, interest: 60, icon: "fab fa-java" },
-                { name: "VueJS", firstYear: 2019, lastYear: -1, proficiency: 85, interest: 85, icon: "fab fa-vuejs" },
-                { name: "Angular", firstYear: 2014, lastYear: 2017, proficiency: 70, interest: 80, icon: "fab fa-angular" }
+                { name: "VueJS", firstYear: 2019, lastYear: 2022, proficiency: 85, interest: 85, icon: "fab fa-vuejs" },
+                { name: "Angular", firstYear: 2014, lastYear: -1, proficiency: 70, interest: 80, icon: "fab fa-angular" }
             ]
         },
     ],

@@ -1,28 +1,77 @@
-import bitvavoMd from "./bitvavo.md";
-
 export default async () => {
-    let bitvavoText = "";
-    if (typeof window === "undefined") {
-        bitvavoText = bitvavoMd;
-    } else {
-        const bitvavo = await fetch(bitvavoMd);
-        bitvavoText = await bitvavo.text();
-    }
-
     return [
         {
             "Period": {
                 "From": {
-                    "Year": 2020,
-                    "Month": 11,
-                    "Day": 1
+                    "Year": 2024,
+                    "Month": 12
                 },
                 "Current": true
             },
             "Position": {
-                "Label": "Tech Lead"
+                "Label": "Software Engineer - Contractor"
             },
-            "Activities": bitvavoText,
+            "Activities": `<p>Freelance software engineering and technical leadership across multiple clients.</p>
+                <p>Game7 (Tech Lead): guiding backend architecture and developer experience for a community-driven platform.</p>
+                <p>Other projects: built and shipped internal operations fullstack tooling (stock management, workflows, automation) and AI-assisted integrations.</p>
+                <p>Focused on modular design, scalability, performance, and reliability.</p>
+                <p>Tech: TypeScript, NestJS, AWS, CDK, SQL, GitHub Actions (CI/CD), React/Angular, C++.</p>`,
+            "Employer": {
+                "Name": "NestDev"
+            }
+        },
+        {
+            "Period": {
+                "From": {
+                    "Year": 2023,
+                    "Month": 10
+                },
+                "To": {
+                    "Year": 2024,
+                    "Month": 12
+                },
+                "Current": false
+            },
+            "Position": {
+                "Label": "Platform Engineer"
+            },
+            "Activities": `<p>Designed and implemented scalable, high-performance solutions leveraging AWS Lambda, Fargate, and event-driven architectures.</p>
+                <p>Maintained and enhanced observability systems to proactively detect bottlenecks and reduce incident response time.</p>
+                <p>Improved and maintained NestJS framework, providing technical support and guidance to product engineering teams.</p>
+                <p>Championed code quality and developer experience (DX) improvements, driving consistency and reducing technical debt.</p>
+                <p>Optimized CI/CD pipelines to accelerate developer velocity and streamline delivery processes.</p>
+                <p>Scaled infrastructure automation by migrating to CDK IaC and integrating AWS CDK into CI/CD.</p>
+                <p>Simplified local development setup for fast, out-of-the-box bootstrapping across environments.</p>
+                <p>Extended E2E and integration testing frameworks, increasing coverage and reliability.</p>
+                <p>Led platform security initiatives including access control and PCI DSS compliance.</p>
+                <p>Supported team reorganization to improve collaboration and delivery.</p>
+                <p>Designed NFT payment flow enabling secure blockchain transactions.</p>
+                <p>Tech: React/NextJS, AWS CDK, IAM, Lambda, SQS, SNS, Cognito, DynamoDB, TypeScript, NestJS, GitHub pipeline, Docker, Jest.</p>`,
+            "Employer": {
+                "Name": "Embed (ex. Fung Payments)"
+            }
+        },
+        {
+            "Period": {
+                "From": {
+                    "Year": 2020,
+                    "Month": 11
+                },
+                "To": {
+                    "Year": 2022,
+                    "Month": 10
+                },
+                "Current": false
+            },
+            "Position": {
+                "Label": "Technical Lead"
+            },
+            "Activities": `<p>Led a JS to TypeScript migration across a large multi-service architecture (NestJS, GraphQL Federation, Next.js).</p>
+                <p>Designed Internal Tools and User-domain architecture using DDD, OOP, and reactive-functional patterns.</p>
+                <p>Owned team leadership: hiring, onboarding, coaching, code reviews, and technical documentation.</p>
+                <p>Ran delivery rituals: sprint management, retrospectives, and skill matrix development.</p>
+                <p>Set quality standards: design principles, unit + e2e testing with Jest (high coverage targets).</p>
+                <p>Contributed to platform and infra: GitHub Actions, Kafka integration, Kubernetes migration support, ArgoCD, AWS, Terraform, MySQL, Sentry, ClickUp.</p>`,
             "Employer": {
                 "Name": "Bitvavo",
                 "ContactInfo": {
@@ -42,24 +91,21 @@ export default async () => {
             "Period": {
                 "From": {
                     "Year": 2019,
-                    "Month": 10,
-                    "Day": 5
+                    "Month": 11
                 },
                 "To": {
                     "Year": 2020,
-                    "Month": 8,
-                    "Day": 1
+                    "Month": 10
                 },
                 "Current": false
             },
             "Position": {
-                "Label": "Senior Fullstack Developer"
+                "Label": "Senior Software Developer"
             },
-            "Activities": `Worked on a payment platform with the following technologies:  
-        <p>NodeJS, 
-        Typescript, GraphQL, Apollo Framework, VueJS 2, PHP Laravel/Lumen,
-         MySQL, Google Cloud, Cloud Run & AppEngine, Firebase, Docker, Gitlab CI/CD, JIIRA, 
-         Google Suite, VSCode, Microservices.</p>`,
+            "Activities": `<p>Managed backend development for the platform’s payment system, enabling secure and reliable transactions.</p>
+                <p>Developed and maintained an in-house CMS, improving user autonomy in content creation and management.</p>
+                <p>Contributed to a microservices-based architecture using Node.js, TypeScript, GraphQL, Vue.js, Laravel, Lumen, and deployed on Google Cloud (Cloud Run, AppEngine, Firebase).</p>
+                <p>Optimized delivery processes with Docker, GitLab CI/CD, and Agile practices using JIRA.</p>`,
             "Employer": {
                 "Name": "Harlem Next",
                 "ContactInfo": {
@@ -78,65 +124,25 @@ export default async () => {
         {
             "Period": {
                 "From": {
-                    "Year": 2007
+                    "Year": 2018,
+                    "Month": 9
                 },
                 "To": {
-                    "Year": 2018,
+                    "Year": 2019,
+                    "Month": 11
                 },
                 "Current": false
             },
             "Position": {
                 "Label": "Founder & Lead Developer"
             },
-            "Activities": `<p>HyperWeb2 is a brand that since 2007 has been dealing with software development, 
-                        consulting and technical assistance.
-                        Aiming for quality and the continuous search for perfection.
-                        I've developed dozens of Web sites and Mobile Applications with PHP or Nodejs/ReactJS
-                        for international customers. In 2017 I've created the RedSquare Team thanks to a seminar
-                        organized at the Salerno University. It has been a team of 6 freelancers selectively chosen
-                        to face the of working on several projects from some companies of the Boston area. 
-                        <br/>Website: <a href="http://www.hyperweb2.com">http://www.hyperweb2.com</a> - <a href="https://sites.google.com/view/redsquarelab/home">RST Team</a></p>`,
+            "Activities": `<p>Skills acquired: ReactJS 16.*, GraphQL, Apollo Framework, NodeJS, TypeScript, Electron, Apache Cordova, C++, Docker, GSuite, Project Management with AGILE Framework, Github and Gitlab platforms, Clockify.</p>`,
             "Employer": {
-                "Name": "HyperWeb2 - RedSquare Team",
+                "Name": "Red Square Team",
                 "ContactInfo": {
                     "Address": {
                         "Contact": {
-                            "Municipality": "Cava De' Tirreni",
-                            "Country": {
-                                "Code": "IT",
-                                "Label": "Italia"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "Period": {
-                "From": {
-                    "Year": 2015,
-                    "Month": 9,
-                    "Day": 1
-                },
-                "To": {
-                    "Year": 2016,
-                    "Month": 9,
-                    "Day": 1
-                },
-                "Current": false
-            },
-            "Position": {
-                "Label": "Lead Developer"
-            },
-            "Activities": `<p>- Web Developing: Wordpress theme and plugin development. Proprietary PHP software (LenusLab suite)</p>
-                        <p>- Crossplatform Mobile Applications with Apache Cordova and RESTful Architecture</p>
-                        <p> Website: <a target="_blank" href="https://www.lenus.it/">https://www.lenus.it/</a></p>`,
-            "Employer": {
-                "Name": "Lenus Media",
-                "ContactInfo": {
-                    "Address": {
-                        "Contact": {
-                            "Municipality": "cava de' tirreni",
+                            "Municipality": "Salerno",
                             "Country": {
                                 "Code": "IT",
                                 "Label": "Italy"
@@ -151,15 +157,48 @@ export default async () => {
                 "From": {
                     "Year": 2006
                 },
-                "Current": true
+                "To": {
+                    "Year": 2019
+                },
+                "Current": false
             },
             "Position": {
-                "Code": "f2b15a0e-e65a-438a-affb-29b9d50b77d1",
-                "Label": "Software developer"
+                "Label": "Founder & Lead Developer"
             },
-            "Activities": "<p>Working as open source developer for MMO Server projects built with C&#43;&#43; &amp; MySQL/PostgreSQL &amp; founder of AzerothCore project.</p><p><a href=\"https://www.getmangos.eu/\" rel=\"nofollow\">https://www.getmangos.eu/</a> (developer, nick: Yehonal)</p><p><a href=\"https://www.trinitycore.org/\" rel=\"nofollow\">https://www.trinitycore.org/</a> (developer, nick: Yehonal)</p><p><a href=\"http://www.azerothcore.org/\" rel=\"nofollow\">http://www.azerothcore.org/</a> (founder)</p>",
+            "Activities": `<p>Hyperweb has been delivering software development, consulting, and technical assistance since 2007, with a strong focus on quality and continuous improvement. I have developed numerous websites and mobile applications using PHP, Node.js, and React.js for both national and international clients.</p>`,
             "Employer": {
-                "Name": "Mangos, TrinityCore & AzerothCore"
+                "Name": "Hyperweb",
+                "ContactInfo": {
+                    "Address": {
+                        "Contact": {
+                            "Municipality": "Cava de' Tirreni",
+                            "Country": {
+                                "Code": "IT",
+                                "Label": "Italy"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Period": {
+                "From": {
+                    "Year": 2015,
+                    "Month": 9
+                },
+                "To": {
+                    "Year": 2016,
+                    "Month": 9
+                },
+                "Current": false
+            },
+            "Position": {
+                "Label": "Lead Developer"
+            },
+            "Activities": "<p>Crossplatform Web & Mobile FullStack Applications with PHP, Apache Cordova and RESTful Architecture.</p>",
+            "Employer": {
+                "Name": "Lenus Media"
             }
         },
         {
@@ -177,45 +216,11 @@ export default async () => {
                 "Current": false
             },
             "Position": {
-                "Label": "Designer & Web Developer"
+                "Label": "Front-end Developer"
             },
-            "Activities": "<p>Website developing</p><p>Reconstruction of logos , depliant and posters in vector graphics for screen printing</p>",
+            "Activities": "<p>Web Developing</p>",
             "Employer": {
                 "Name": "Graffelab",
-                "ContactInfo": {
-                    "Address": {
-                        "Contact": {
-                            "Municipality": "cava de' tirreni",
-                            "Country": {
-                                "Code": "IT",
-                                "Label": "Italy"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "Period": {
-                "From": {
-                    "Year": 2010,
-                    "Month": 5,
-                    "Day": 1
-                },
-                "To": {
-                    "Year": 2010,
-                    "Month": 7,
-                    "Day": 1
-                },
-                "Current": false
-            },
-            "Position": {
-                "Label": "Developer"
-            },
-            "Activities": `<p>- Developer and Theme Designer for Joomla CMS</p>
-                        <p>Website: <a href="http://intertexta.it">http://intertexta.it</a>`,
-            "Employer": {
-                "Name": "Intertexta Solutions",
                 "ContactInfo": {
                     "Address": {
                         "Contact": {
@@ -244,44 +249,11 @@ export default async () => {
                 "Current": false
             },
             "Position": {
-                "Label": "Developer"
+                "Label": "Software Developer"
             },
-            "Activities": "<p>- Developing proprietary CRM/CSM/ECommerce</p><p>- Main languages: Java &amp; PHP</p>",
+            "Activities": "<p>Developing proprietary CRM/CSM/ECommerce. Main languages: Java & PHP.</p>",
             "Employer": {
                 "Name": "7Web",
-                "ContactInfo": {
-                    "Address": {
-                        "Contact": {
-                            "Municipality": "cava de' tirreni",
-                            "Country": {
-                                "Code": "IT",
-                                "Label": "Italy"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "Period": {
-                "From": {
-                    "Year": 2006,
-                    "Month": 6,
-                    "Day": 1
-                },
-                "To": {
-                    "Year": 2007,
-                    "Month": 8,
-                    "Day": 1
-                },
-                "Current": false
-            },
-            "Position": {
-                "Label": "Technical Assistant"
-            },
-            "Activities": "<p>- Maintenance and Reparation of Computers</p><p>- Selling technology items</p>",
-            "Employer": {
-                "Name": "Oasis Informatica",
                 "ContactInfo": {
                     "Address": {
                         "Contact": {
