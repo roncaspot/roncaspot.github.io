@@ -21,7 +21,7 @@ module.exports = async (basePath, sitemap, publicPath = "/") => {
             res.send(Sitemap.sitemaps[0].toString())
         });
 
-        return Sitemap;
+        return app;
     }
 
     Sitemap.sitemaps.map((sitemap, index) => {

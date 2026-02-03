@@ -1,7 +1,13 @@
 import bitvavoMd from "./bitvavo.md";
 
 export default async () => {
-    const bitvavo = await fetch(bitvavoMd)
+    let bitvavoText = "";
+    if (typeof window === "undefined") {
+        bitvavoText = bitvavoMd;
+    } else {
+        const bitvavo = await fetch(bitvavoMd);
+        bitvavoText = await bitvavo.text();
+    }
 
     return [
         {
@@ -16,7 +22,7 @@ export default async () => {
             "Position": {
                 "Label": "Tech Lead"
             },
-            "Activities": await bitvavo.text(),
+            "Activities": bitvavoText,
             "Employer": {
                 "Name": "Bitvavo",
                 "ContactInfo": {

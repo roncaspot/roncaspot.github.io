@@ -2,7 +2,10 @@ import React from 'react';
 
 
 import Curriculum from "./Home/curriculum"
-import html2pdf from 'html2pdf.js';
+let html2pdf;
+if (typeof window !== "undefined") {
+    html2pdf = require("html2pdf.js");
+}
 
 export default () => {
     var CVElem = React.useRef(null);
@@ -13,7 +16,7 @@ export default () => {
                 {/* START CONTENT  */}
                 <div className="main scroll-page">
                     {/* START HOME SECTION*/}
-                    <button onClick={() => html2pdf().set({
+                    <button onClick={() => html2pdf && html2pdf().set({
                         pagebreak: { mode: 'avoid-all' },
                         jsPDF: { unit: "cm", format: "a3" }
                     }).from(CVElem.current).save("curriculum.pdf")} className="download-link hvr-shutter-out-horizontal">Resume PDF</button>

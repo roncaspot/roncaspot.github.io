@@ -7,7 +7,7 @@ import smExpress from "../sitemap-gen/express"
 
 export default async (sitemap) => {
     var DIST_DIR = path.join(__dirname, "../../build"),
-        PORT = config.clientPort,
+        PORT = process.env.PORT || config.clientPort || 3000,
         app = express();
 
     if (config.prerender && config.prerender.enabled) {

@@ -2,6 +2,12 @@
 process.env.BABEL_ENV = 'production';
 process.env.NODE_ENV = 'production';
 
+// Allow server-side imports of .md files by returning raw content.
+const fs = require("fs");
+require.extensions[".md"] = (module, filename) => {
+    module.exports = fs.readFileSync(filename, "utf8");
+};
+
 require('module-alias/register');
 
 const sitemap=require("../sitemap-gen/sitemap");
