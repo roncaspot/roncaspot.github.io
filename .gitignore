@@ -18,6 +18,9 @@ node_modules
 # production
 /build
 
+/var/*
+!/var/.gitkeep
+
 # misc
 .env.local
 .env.development.local
