@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.55cf4328.chunk.js",
-    "main.js.map": "/static/js/main.55cf4328.chunk.js.map",
+    "main.js": "/static/js/main.97b37be2.chunk.js",
+    "main.js.map": "/static/js/main.97b37be2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.db195b35.js",
     "runtime-main.js.map": "/static/js/runtime-main.db195b35.js.map",
     "static/js/2.6adb442e.chunk.js": "/static/js/2.6adb442e.chunk.js",
     "static/js/2.6adb442e.chunk.js.map": "/static/js/2.6adb442e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9148d0559c5d66130e777088cfcd34a3.js": "/precache-manifest.9148d0559c5d66130e777088cfcd34a3.js",
+    "precache-manifest.0d2a5f9029366a56cd7de9a85ff2bca8.js": "/precache-manifest.0d2a5f9029366a56cd7de9a85ff2bca8.js",
     "service-worker.js": "/service-worker.js",
     "static/media/about_descr.md": "/static/media/about_descr.ab0c4563.md",
     "static/media/achi-crypto.jpg": "/static/media/achi-crypto.b04cb887.jpg",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.db195b35.js",
     "static/js/2.6adb442e.chunk.js",
-    "static/js/main.55cf4328.chunk.js"
+    "static/js/main.97b37be2.chunk.js"
   ]
 }
