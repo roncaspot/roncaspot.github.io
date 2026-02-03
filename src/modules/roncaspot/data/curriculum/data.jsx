@@ -76,13 +76,7 @@ export default {
           __hwc_icon: "fab fa-linkedin",
           __hwc_name: "Linkedin",
           Contact: "https://www.linkedin.com/in/joseph-ronca/",
-        },
-        {
-          __hwc_type: "facebook",
-          __hwc_icon: "fab fa-facebook",
-          __hwc_name: "Facebook",
-          Contact: "https://www.facebook.com/giusepperonca/",
-        },
+        }
       ],
       InstantMessaging: [
         {

@@ -63,9 +63,6 @@ export default (props) => {
                                 <a className="profile-img" href="index.html">
                                     <img src={BigAvatar} alt="BigAvatar" />
                                 </a>
-                                <h3 className="info-position">
-                                    JS Full Stack Developer
-                                </h3>
                             </div>
                             <div className="col-sm-9">
                                 <div className="about-info row">
@@ -93,29 +90,6 @@ export default (props) => {
                                             {Identification.PersonName.Surname}
                                         </div>
                                     </div>
-                                    <div
-                                        className={
-                                            "col-sm-4 info-block  " +
-                                            (!toPrint ? "wow fadeInRight" : "")
-                                        }
-                                    >
-                                        <div className="info-icon hvr-trim">
-                                            {" "}
-                                            <i
-                                                className="fa fa-envelope"
-                                                aria-hidden="true"
-                                            />
-                                        </div>
-                                        <div className="info-text">
-                                            <span>
-                                                <strong>Email</strong>
-                                            </span>
-                                            {
-                                                Identification.ContactInfo.Email
-                                                    .Contact
-                                            }
-                                        </div>
-                                    </div>
                                     {/* <div className={"col-sm-4 info-block  " + (!toPrint ? "wow fadeInRight" : "")}>
                                         <div className="info-icon hvr-trim"><i className="fas fa-phone-volume" aria-hidden="true" /></div>
                                         <div className="info-text">
@@ -123,29 +97,6 @@ export default (props) => {
                                             {Identification.ContactInfo.Telephone[0].Contact}
                                         </div>
                                     </div> */}
-                                    <div
-                                        className={
-                                            "col-sm-4 info-block  " +
-                                            (!toPrint ? "wow fadeInRight" : "")
-                                        }
-                                    >
-                                        <div className="info-icon hvr-trim">
-                                            {" "}
-                                            <i
-                                                className="fa fa-calendar"
-                                                aria-hidden="true"
-                                            />
-                                        </div>
-                                        <div className="info-text">
-                                            <span>
-                                                <strong>
-                                                    Date Of Birthday
-                                                </strong>
-                                            </span>
-                                            {BirthDate.Year}/{BirthDate.Month}/
-                                            {BirthDate.Day}
-                                        </div>
-                                    </div>
                                     <div
                                         className={
                                             "col-sm-4 info-block  " +
@@ -235,15 +186,6 @@ export default (props) => {
                                     </div>
                                     <div className="col-sm-12 about-content">
                                         <AboutDescr />
-                                        <p className="twke3">
-                                            <span>Yours sincerely,</span>
-                                            <img
-                                                src={SignImg}
-                                                style={{ maxWidth: "266px" }}
-                                                className="img-responsive"
-                                                alt="Sign"
-                                            />
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -300,11 +242,17 @@ export default (props) => {
                                     );
                                 });
 
+                                const sortedList = [...main.list].sort(
+                                    (a, b) =>
+                                        b.expValue - a.expValue ||
+                                        b.interest - a.interest
+                                );
+
                                 return (
                                     <div className="col-sm-12" key={key}>
                                         <h2>{main.name}</h2>
                                         <div className="row">
-                                            {chunk(main.list, 6).map((row) => {
+                                            {chunk(sortedList, 6).map((row) => {
                                                 return (
                                                     <div className="skill">
                                                         {row.map(
