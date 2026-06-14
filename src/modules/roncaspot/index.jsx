@@ -21,7 +21,7 @@ function ScriptLoader() {
     useScript("assets/js/owl.carousel.min.js");
     useScript("assets/js/wow.js");
     useScript("assets/js/fancybox/jquery.fancybox.pack.js");
-    //useScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBkdsK7PWcojsO-o_q2tmFOLBfPGL8k8Vg");
+    // Google Maps loading is intentionally disabled; configure keys outside source if needed.
     //useScript("assets/js/gmap3.js");
     useScript("assets/js/init.js");
     useScript("assets/js/script.js");
