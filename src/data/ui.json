@@ -1,0 +1,145 @@
+{
+    "skipToContent": "Skip to content",
+    "navigation": {
+        "ariaLabel": "Main navigation",
+        "items": [
+            { "label": "Experience", "href": "#experience" },
+            { "label": "Projects", "href": "#projects" },
+            { "label": "Contact ↗", "href": "#contact" }
+        ]
+    },
+    "theme": {
+        "label": "Color theme",
+        "options": [
+            { "value": "system", "label": "System theme" },
+            { "value": "light", "label": "Light theme" },
+            { "value": "dark", "label": "Dark theme" }
+        ]
+    },
+    "heroActions": {
+        "talk": "Let’s talk",
+        "download": "Download CV",
+        "linkedin": "LinkedIn ↗",
+        "github": "GitHub ↗"
+    },
+    "symbols": {
+        "external": "↗",
+        "download": "↓",
+        "separator": "·",
+        "listSeparator": ", ",
+        "space": " ",
+        "colon": ":",
+        "expand": "+",
+        "close": "×",
+        "backToTop": "Back to top ↑"
+    },
+    "identity": {
+        "ariaLabel": "Selected experience",
+        "introFirstLine": "Selected",
+        "introSecondLine": "experience",
+        "labels": {
+            "odido": "Current client",
+            "bitvavo": "Earlier employer",
+            "game7": "Earlier client",
+            "azerothcore": "Open source",
+            "nestdev": "Own company"
+        },
+        "nestdevSite": "nestdev.it ↗"
+    },
+    "sections": {
+        "about": {
+            "kicker": "About",
+            "headingLines": ["Build it.", "Make it easy to run."],
+            "disclosure": "More about my work"
+        },
+        "skills": {
+            "kicker": "Skills",
+            "heading": "From backend to production."
+        },
+        "experience": {
+            "kicker": "Experience & open source",
+            "heading": "The work, connected.",
+            "introLines": ["Consultancy, open-source projects", "and the career behind them."]
+        },
+        "projects": {
+            "kicker": "Projects & achievements",
+            "heading": "More of the work.",
+            "introLines": ["Open source, developer tools, independent projects", "and community work."]
+        },
+        "background": {
+            "kicker": "Background",
+            "heading": "Beyond the day-to-day.",
+            "education": "Education",
+            "outsideWork": "Outside work"
+        },
+        "contact": {
+            "kicker": "Next chapter",
+            "headingLines": ["Let’s talk about", "your team."],
+            "bodyLines": ["Open to contract and full-time roles.", "Haarlem, NL · Remote-first."]
+        }
+    },
+    "experience": {
+        "viewAriaLabel": "Experience view",
+        "graph": "Graph",
+        "list": "List",
+        "instruction": "Select a node to explore its role and projects.",
+        "legendClient": "Client / project",
+        "legendProduction": "Lab tools in production",
+        "companyType": "Own company · active",
+        "companyDates": "Dec 2024 – today",
+        "viewDetails": "View details",
+        "consultancyHeading": "Consultancy & own projects",
+        "labHeadingName": "NestDev",
+        "labHeadingSuffix": "[Lab]",
+        "openSource": "Open source",
+        "allProjects": "All projects ↗",
+        "azerothHeading": "Open source, ongoing",
+        "activeOpenSource": "Open source · active",
+        "azerothProject": "AzerothCore project",
+        "productionHeading": "Lab tools in production",
+        "earlierCareer": "Earlier career",
+        "earlierNote": "Bitvavo and Embed are above, under “Lab tools in production”",
+        "listGroups": {
+            "company": "Company & consultancy",
+            "lab": "NestDev [Lab] · open source",
+            "azeroth": "AzerothCore · active open source",
+            "earlier": "Earlier career"
+        },
+        "openPanel": "Open detail panel",
+        "tech": "Tech",
+        "detailLinks": {
+            "nestdev": "NestDev ↗",
+            "azerothcore": "Visit AzerothCore ↗",
+            "code": "View code ↗"
+        },
+        "productionLead": "NestDev [Lab] →",
+        "dialog": {
+            "close": "Close details",
+            "openedTemplate": "{{name}} details opened.",
+            "closed": "Details closed."
+        }
+    },
+    "projects": {
+        "archiveSummaryTemplate": "All {{count}} projects and achievements"
+    },
+    "footer": {
+        "identity": "Joseph (Giuseppe) Ronca · Haarlem, NL",
+        "print": "Print / Save as PDF"
+    },
+    "print": {
+        "ariaLabel": "Printable curriculum vitae",
+        "profile": "Profile",
+        "skills": "Skills",
+        "consultancy": "Consultancy & current engagement",
+        "earlierCareer": "Earlier career",
+        "openSourceProjects": "Open source & selected projects",
+        "education": "Education",
+        "footer": "Joseph (Giuseppe) Ronca · Curriculum vitae",
+        "pageOne": "1 / 2",
+        "pageTwo": "2 / 2",
+        "labPrefix": "NestDev [Lab]:",
+        "labProjects": "agentwheel · syncwheel · nestjs-yalc · portable-agent-memory · agent-core-toolkit · agent-mesh.",
+        "noderouterPrefix": "Noderouter:",
+        "noderouterDescription": "programmable proxy with integrated discovery-service, tunneling and DNS."
+    }
+}

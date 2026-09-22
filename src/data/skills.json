@@ -1,0 +1,27 @@
+[
+    {
+        "id": "backend",
+        "name": "Backend",
+        "description": "TypeScript · Node.js · NestJS · GraphQL / Apollo · PostgreSQL / MySQL · C++ · Java · PHP"
+    },
+    {
+        "id": "platform",
+        "name": "Platform / cloud",
+        "description": "AWS · CDK · Lambda · ECS / Fargate · Kubernetes · Docker · GitHub Actions · CI/CD"
+    },
+    {
+        "id": "observability",
+        "name": "Observability",
+        "description": "Elastic APM / RUM · Kibana · Structured logging · Dashboards · Personal-data redaction"
+    },
+    {
+        "id": "frontend",
+        "name": "Frontend",
+        "description": "React / Next.js · Angular · Vue.js · Electron · Cordova"
+    },
+    {
+        "id": "leadership",
+        "name": "Leadership",
+        "description": "Technical direction · Hiring & onboarding · Coaching · Code reviews · Sprint management"
+    }
+]

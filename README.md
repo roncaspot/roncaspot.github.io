@@ -1,49 +1,48 @@
 # Roncaspot CV / Portfolio
 
-Personal CV + portfolio site published on GitHub Pages: `roncaspot.github.io`.
-This is a React single-page app built on `@hw-core/react-platform` and CRACO, with data-driven content in `src/modules/roncaspot/data`.
-
-## What This Repo Provides
-
-- **Home (`/` and `/index.html`)** with intro, menu, curriculum, footer.
-- **Printable CV (`/print.html`)** with client-side PDF export.
-- **Curriculum data** in `src/modules/roncaspot/data/curriculum`.
-- **Static assets** in `public/assets` and images in `src/modules/roncaspot/data/pictures`.
-
-## Rendering Modes
-
-This project can be used as:
-
-- **CSR (Client-Side Rendering):** default `npm run build`.
-- **SSG (Static pre-render):** `npm run build:ssg` using `react-spa-prerender`.
-- **SSR-style prerender for crawlers:** optional Express + `prerender` setup (see `apps/server`).
-
-## Key Structure
-
-- `src/index.js`: platform bootstrap.
-- `src/platformConf.js`: platform config and `routePaths` export (used for sitemap).
-- `src/conf/conf.js`: runtime config (basePath, websiteUrl, etc.).
-- `src/conf/modules.js`: module registration (activates `roncaspot`).
-- `src/modules/roncaspot`: main module with routes, components, and data.
-- `apps/server`: optional Express server for serving build and prerender.
+Personal CV and portfolio site published at roncaspot.github.io. The site is a static Vite + React application with a data-driven curriculum, an interactive experience map, light and dark themes, and an exactly two-page printable CV.
 
 ## Commands
 
-- `npm install`
-- `npm start` start dev server (CRA + CRACO).
-- `npm run build` CSR production build.
-- `npm run build:ssg` build + static prerender.
-- `npm run serve` serve the build via Express.
-- `npm run deploy` publish to `gh-pages` (runs `build:ssg`).
+- npm install installs dependencies.
+- npm start starts the Vite development server.
+- npm run build creates the production site in dist/.
+- npm run serve serves the production build locally.
+- npm run deploy builds and publishes dist/ to the gh-pages branch.
 
-## Where To Update Content
+## Structure
 
-- **Profile/CV:** `src/modules/roncaspot/data/curriculum`.
-- **Home sections:** `src/modules/roncaspot/routes/Home`.
-- **Title/SEO:** `src/modules/roncaspot/index.jsx` (Helmet).
+- src/data/ is the only source of user-visible copy and curriculum content.
+- src/components/ contains presentation and interaction components.
+- src/styles.css is the approved responsive design stylesheet.
+- public/assets/hero/ contains the Granada hero photograph.
+- public/assets/logos/ contains selected-experience marks and their provenance.
+- public/curriculum.pdf is the downloadable two-page CV generated from the printable page.
+- index.html and print.html are Vite entry points at / and /print.html.
 
-## Notes
+## Content updates
 
-- Adjust site base path for GitHub Pages in `src/conf/conf.js`.
-- The print page uses `html2pdf.js` and saves `curriculum.pdf`.
-- Code style uses 4 spaces for indentation.
+Keep every user-visible string in src/data/:
+
+- profile.json: identity, headline, availability, contacts, About copy, and print header.
+- experience.json: companies, roles, projects, graph edges, marks, relationships, and print excerpts.
+- projects.json: featured work and the full archive.
+- skills.json: skill groups.
+- education.json: studies and outside-work interests.
+- ui.json: navigation, section headings, controls, labels, status messages, and print labels.
+
+Adding a client or role means adding an object to experience.json and placing its ID in the relevant layout collection. Components must not contain fallback marketing or curriculum copy.
+
+## Verification
+
+Before delivery:
+
+1. Run npm run build.
+2. Serve dist/ with npm run serve.
+3. Capture desktop and 390 px screenshots in light and dark themes.
+4. Exercise graph nodes and the dialog with Tab, Enter, Space, and Escape; confirm focus returns to the opener.
+5. Print with background graphics and confirm the PDF is exactly two A4 pages.
+6. Confirm zero console errors, no horizontal overflow at 360 px, and no outbound runtime requests.
+7. Compare the screenshots with the approved design reference.
+
+Logo source details and licences are documented in public/assets/logos/SOURCES.md.

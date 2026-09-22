@@ -1,0 +1,781 @@
+{
+    "allProjectsUrl": "https://github.com/NestDevLab",
+    "nodes": [
+        {
+            "id": "nestdev",
+            "name": "NestDev",
+            "role": "Software Engineer · Contractor",
+            "dates": "Dec 2024 – today",
+            "type": "Own company",
+            "highlights": [
+                "Freelance software engineering and technical leadership across multiple clients.",
+                "Focused on modular design, scalability, performance, and reliability."
+            ],
+            "tech": "TypeScript, NestJS, AWS, CDK, SQL, GitHub Actions (CI/CD), React/Angular, C++.",
+            "url": "https://www.nestdev.it/",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/nestdev.png",
+                "className": "logo-nestdev",
+                "markClass": "mark-nestdev",
+                "identityWidth": 40,
+                "identityHeight": 40
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [
+                "Consultancy: Odido and Game7. Own projects: internal tooling & AI integrations.",
+                "Open source: <a href=\"https://www.nestdev.it/\">NestDev</a> [Lab]."
+            ],
+            "links": [
+                {
+                    "label": "NestDev ↗",
+                    "url": "https://www.nestdev.it/"
+                }
+            ],
+            "printHighlights": [
+                "Freelance software engineering and technical leadership across multiple clients.",
+                "Focused on modular design, scalability, performance, and reliability."
+            ],
+            "printPage": 1
+        },
+        {
+            "id": "odido",
+            "name": "Odido",
+            "role": "DevEx & Platform Engineer",
+            "dates": "Apr 2026 – today",
+            "type": "Current client · NestDev",
+            "highlights": [
+                "Member of the Developer Experience / Core Platform team for Odido's consumer self-service web portals.",
+                "Introduced standard structured (ECS) logging across the NestJS back ends, with request context and aligned log/APM service identity, making requests traceable end to end in Elastic.",
+                "Built Kibana error-investigation and service-health dashboards for all environments, managed as code with drift detection.",
+                "Implemented personal-data redaction in logs (emails, phone numbers, personal fields, URL-encoded values) and stopped outbound API clients from logging payloads, headers and credentials.",
+                "Hardened CI and the supply chain: Dependabot plus a dependency-review gate that blocks high and critical vulnerabilities, and a CI check that catches NestJS dependency-injection failures before deploy.",
+                "Delivered account and authentication features end to end: change email and name, privacy settings, redirect-origin validation, and the migration off a legacy auth bridge.",
+                "Integrated consent management (Usercentrics), global search, Web Vitals monitoring (Elastic RUM) and automated sitemap generation, and contributed to the shared design system.",
+                "Reviewed code and backend architecture, and used AI coding agents in a governed, review-first workflow. 30+ merged pull requests in five months."
+            ],
+            "tech": "TypeScript, NestJS (Fastify), Next.js/React, oRPC, Zod, Elastic APM/RUM, Kibana, Kubernetes (EKS), Helm, GitHub Actions, Vitest.",
+            "relationship": "Contract via NestDev",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/odido.svg",
+                "className": "logo-odido",
+                "markClass": "mark-odido",
+                "identityWidth": 112,
+                "identityHeight": 34
+            },
+            "contextHtml": "Contract via <a href=\"https://www.nestdev.it/\">NestDev</a>",
+            "relationshipsHtml": [
+                "Lab tools in production: connected to <a href=\"https://www.nestdev.it/\">NestDev</a> [Lab]."
+            ],
+            "links": [],
+            "printHighlights": [
+                "Member of the Developer Experience / Core Platform team for Odido's consumer self-service web portals.",
+                "Introduced standard structured (ECS) logging across the NestJS back ends, with request context and aligned log/APM service identity, making requests traceable end to end in Elastic.",
+                "Built Kibana error-investigation and service-health dashboards for all environments, managed as code with drift detection.",
+                "Implemented personal-data redaction in logs (emails, phone numbers, personal fields, URL-encoded values) and stopped outbound API clients from logging payloads, headers and credentials.",
+                "Hardened CI and the supply chain: Dependabot plus a dependency-review gate that blocks high and critical vulnerabilities, and a CI check that catches NestJS dependency-injection failures before deploy.",
+                "Delivered account and authentication features end to end: change email and name, privacy settings, redirect-origin validation, and the migration off a legacy auth bridge.",
+                "Integrated consent management (Usercentrics), global search, Web Vitals monitoring (Elastic RUM) and automated sitemap generation, and contributed to the shared design system.",
+                "Reviewed code and backend architecture, and used AI coding agents in a governed, review-first workflow. 30+ merged pull requests in five months."
+            ],
+            "printRoleHtml": "DevEx & Platform Engineer, contract via <a href=\"https://www.nestdev.it/\">NestDev</a>",
+            "printPage": 1
+        },
+        {
+            "id": "game7",
+            "name": "Game7",
+            "role": "Tech Lead",
+            "dates": "Dec 2024 – Mar 2025",
+            "type": "Client · NestDev",
+            "highlights": [
+                "Tech Lead on a community-driven gaming platform, guiding backend architecture and developer experience.",
+                "Worked on the infrastructure behind a large-scale MMORPG: the backend services and the tooling around them.",
+                "Aligned open-source contributions with the platform’s goals."
+            ],
+            "tech": "TypeScript, C++, Rust.",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/game7.svg",
+                "className": "logo-game7",
+                "markClass": "mark-game7",
+                "identityWidth": 48,
+                "identityHeight": 48
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Tech Lead on a community-driven gaming platform, guiding backend architecture and developer experience.",
+                "Worked on the infrastructure behind a large-scale MMORPG: backend services and tooling."
+            ],
+            "printRoleHtml": "Tech Lead · <a href=\"https://www.nestdev.it/\">NestDev</a>",
+            "printPage": 1
+        },
+        {
+            "id": "internal",
+            "name": "Internal tooling & AI integrations",
+            "role": "Own projects",
+            "dates": "",
+            "type": "Own projects · NestDev",
+            "highlights": [
+                "Built and shipped internal operations fullstack tooling (stock management, workflows, automation) and AI-assisted integrations."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "AI",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Built and shipped internal operations fullstack tooling (stock management, workflows, automation) and AI-assisted integrations."
+            ],
+            "printRoleHtml": "Own projects · <a href=\"https://www.nestdev.it/\">NestDev</a>",
+            "printPage": 1
+        },
+        {
+            "id": "embed",
+            "name": "Embed (ex. Fung Payments)",
+            "productionName": "Embed",
+            "role": "Platform Engineer",
+            "dates": "Oct 2023 – Dec 2024",
+            "type": "Earlier career",
+            "highlights": [
+                "Designed and implemented scalable, high-performance solutions leveraging AWS Lambda, Fargate, and event-driven architectures.",
+                "Maintained and enhanced observability systems to proactively detect bottlenecks and reduce incident response time.",
+                "Improved and maintained NestJS framework, providing technical support and guidance to product engineering teams.",
+                "Championed code quality and developer experience (DX) improvements, driving consistency and reducing technical debt.",
+                "Optimized CI/CD pipelines to accelerate developer velocity and streamline delivery processes.",
+                "Scaled infrastructure automation by migrating to CDK IaC and integrating AWS CDK into CI/CD.",
+                "Simplified local development setup for fast, out-of-the-box bootstrapping across environments.",
+                "Extended E2E and integration testing frameworks, increasing coverage and reliability.",
+                "Led platform security initiatives including access control and PCI DSS compliance.",
+                "Supported team reorganization to improve collaboration and delivery.",
+                "Designed NFT payment flow enabling secure blockchain transactions."
+            ],
+            "tech": "React/NextJS, AWS CDK, IAM, Lambda, SQS, SNS, Cognito, DynamoDB, TypeScript, NestJS, GitHub pipeline, Docker, Jest.",
+            "mark": {
+                "type": "monogram",
+                "text": "E",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [
+                "Lab tools in production: connected to <a href=\"https://www.nestdev.it/\">NestDev</a> [Lab]."
+            ],
+            "links": [],
+            "printHighlights": [
+                "Designed and implemented scalable, high-performance solutions leveraging AWS Lambda, Fargate, and event-driven architectures.",
+                "Maintained and enhanced observability systems to proactively detect bottlenecks and reduce incident response time.",
+                "Improved and maintained NestJS framework, providing technical support and guidance to product engineering teams."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "bitvavo",
+            "name": "Bitvavo",
+            "role": "Technical Lead",
+            "dates": "Nov 2020 – Oct 2022",
+            "type": "Earlier career",
+            "highlights": [
+                "Led a JS to TypeScript migration across a large multi-service architecture (NestJS, GraphQL Federation, Next.js).",
+                "Designed Internal Tools and User-domain architecture using DDD, OOP, and reactive-functional patterns.",
+                "Owned team leadership: hiring, onboarding, coaching, code reviews, and technical documentation.",
+                "Ran delivery rituals: sprint management, retrospectives, and skill matrix development.",
+                "Set quality standards: design principles, unit + e2e testing with Jest (high coverage targets).",
+                "Contributed to platform and infra: GitHub Actions, Kafka integration, Kubernetes migration support, ArgoCD, AWS, Terraform, MySQL, Sentry, ClickUp."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/bitvavo.svg",
+                "className": "logo-bitvavo",
+                "markClass": "mark-bitvavo",
+                "identityWidth": 132,
+                "identityHeight": 25
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [
+                "Lab tools in production: connected to <a href=\"https://www.nestdev.it/\">NestDev</a> [Lab]."
+            ],
+            "links": [],
+            "printHighlights": [
+                "Led a JS to TypeScript migration across a large multi-service architecture (NestJS, GraphQL Federation, Next.js).",
+                "Designed Internal Tools and User-domain architecture using DDD, OOP, and reactive-functional patterns.",
+                "Owned team leadership: hiring, onboarding, coaching, code reviews, and technical documentation."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "harlem",
+            "name": "Harlem Next",
+            "role": "Senior Software Developer",
+            "dates": "Nov 2019 – Oct 2020",
+            "type": "Earlier career",
+            "highlights": [
+                "Managed backend development for the platform’s payment system, enabling secure and reliable transactions.",
+                "Developed and maintained an in-house CMS, improving user autonomy in content creation and management.",
+                "Contributed to a microservices-based architecture using Node.js, TypeScript, GraphQL, Vue.js, Laravel, Lumen, and deployed on Google Cloud (Cloud Run, AppEngine, Firebase).",
+                "Optimized delivery processes with Docker, GitLab CI/CD, and Agile practices using JIRA."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/harlem.svg",
+                "className": "logo-harlem"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Managed backend development for the platform’s payment system, enabling secure and reliable transactions."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "redsquare",
+            "name": "Red Square Team",
+            "role": "Founder & Lead Developer",
+            "dates": "Sep 2018 – Nov 2019",
+            "type": "Earlier career",
+            "highlights": [
+                "Skills acquired: ReactJS 16.*, GraphQL, Apollo Framework, Node.js, TypeScript, Electron, Apache Cordova, C++, Docker, GSuite, project management with the Agile framework, GitHub and GitLab platforms, Clockify."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "RS",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Skills acquired: ReactJS 16.*, GraphQL, Apollo Framework, Node.js, TypeScript, Electron, Apache Cordova, C++, Docker, GSuite, project management with the Agile framework, GitHub and GitLab platforms, Clockify."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "hyperweb",
+            "name": "Hyperweb",
+            "role": "Founder & Lead Developer",
+            "dates": "2006 – 2019",
+            "type": "Earlier career",
+            "highlights": [
+                "Hyperweb has been delivering software development, consulting, and technical assistance since 2007, with a strong focus on quality and continuous improvement. I have developed numerous websites and mobile applications using PHP, Node.js, and React.js for both national and international clients."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "H",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Hyperweb has been delivering software development, consulting, and technical assistance since 2007, with a strong focus on quality and continuous improvement. I have developed numerous websites and mobile applications using PHP, Node.js, and React.js for both national and international clients."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "lenus",
+            "name": "Lenus Media",
+            "role": "Lead Developer",
+            "dates": "Sep 2015 – Sep 2016",
+            "type": "Earlier career",
+            "highlights": [
+                "Cross-platform web and mobile full-stack applications using PHP, Apache Cordova and RESTful architecture."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/lenus.svg",
+                "className": "logo-lenus"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Cross-platform Web & Mobile full-stack Applications with PHP, Apache Cordova and RESTful Architecture."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "graffelab",
+            "name": "Graffelab",
+            "role": "Front-end Developer",
+            "dates": "Sep 2010 – Jan 2011",
+            "type": "Earlier career",
+            "highlights": [
+                "Web development"
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "G",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Web development"
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "sevenweb",
+            "name": "7Web",
+            "role": "Software Developer",
+            "dates": "Sep 2009 – Jan 2010",
+            "type": "Earlier career",
+            "highlights": [
+                "Developed proprietary CRM, CSM and e-commerce software. Main languages: Java & PHP."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "7W",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Developed proprietary CRM, CSM and e-commerce software. Main languages: Java & PHP."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "azerothcore",
+            "name": "AzerothCore",
+            "role": "Founder and lead developer",
+            "dates": "2016 – today",
+            "type": "Active open source",
+            "highlights": [
+                "Founder and lead developer of AzerothCore, an open-source, modular MMO server framework written in C++, started in 2016 and still in active development.",
+                "Its modular design lets server operators extend the core through modules instead of forking it.",
+                "Today the project counts 8,900+ stars, 3,800+ forks and 600+ contributors across an organisation of 200+ repositories (figures of September 2026).",
+                "Used in production by public game servers with thousands of active players."
+            ],
+            "tech": "MMO Server · C++, MySQL, PHP & Symfony, Node.js",
+            "url": "https://www.azerothcore.org/",
+            "codeURL": "https://github.com/azerothcore",
+            "mark": {
+                "type": "image",
+                "src": "/assets/logos/azerothcore.png",
+                "className": "logo-azerothcore",
+                "markClass": "mark-azerothcore",
+                "identityWidth": 60,
+                "identityHeight": 40
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [
+                "Project: Noderouter.",
+                "Lab tools in production: connected to <a href=\"https://www.nestdev.it/\">NestDev</a> [Lab]."
+            ],
+            "links": [
+                {
+                    "label": "Visit AzerothCore ↗",
+                    "url": "https://www.azerothcore.org/"
+                },
+                {
+                    "label": "View code ↗",
+                    "url": "https://github.com/azerothcore"
+                }
+            ],
+            "printHighlights": [
+                "Founder and lead developer of AzerothCore, an open-source, modular MMO server framework in C++, started in 2016 and still active.",
+                "8,900+ stars, 3,800+ forks and 600+ contributors; used in production by public game servers."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "agentwheel",
+            "name": "agentwheel",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "One package → every agent runtime. Skills, rules and MCP servers, resolved and synced."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/agentwheel/",
+            "mark": {
+                "type": "monogram",
+                "text": "AW",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit agentwheel ↗",
+                    "url": "https://www.nestdev.it/agentwheel/"
+                }
+            ]
+        },
+        {
+            "id": "syncwheel",
+            "name": "syncwheel",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "One branch → many PRs, rebuilt deterministically from a single manifest."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/syncwheel/",
+            "mark": {
+                "type": "monogram",
+                "text": "SW",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit syncwheel ↗",
+                    "url": "https://www.nestdev.it/syncwheel/"
+                }
+            ]
+        },
+        {
+            "id": "nestjs-yalc",
+            "name": "nestjs-yalc",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "One definition → REST, GraphQL, events."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/nestjs-yalc/",
+            "mark": {
+                "type": "monogram",
+                "text": "NY",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit nestjs-yalc ↗",
+                    "url": "https://www.nestdev.it/nestjs-yalc/"
+                }
+            ]
+        },
+        {
+            "id": "portable-agent-memory",
+            "name": "portable-agent-memory",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "One memory contract → durable context across agents, vendors and runs."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/portable-agent-memory/",
+            "mark": {
+                "type": "monogram",
+                "text": "PM",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit portable-agent-memory ↗",
+                    "url": "https://www.nestdev.it/portable-agent-memory/"
+                }
+            ]
+        },
+        {
+            "id": "agent-core-toolkit",
+            "name": "agent-core-toolkit",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "One contract → every runtime. The shared base layer."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/agent-core-toolkit/",
+            "mark": {
+                "type": "monogram",
+                "text": "CT",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit agent-core-toolkit ↗",
+                    "url": "https://www.nestdev.it/agent-core-toolkit/"
+                }
+            ]
+        },
+        {
+            "id": "agent-mesh",
+            "name": "agent-mesh",
+            "role": "Open-source project",
+            "type": "NestDev [Lab]",
+            "dates": "",
+            "highlights": [
+                "Bounded multi-agent workflows across runtime-adapter teams."
+            ],
+            "tech": "",
+            "url": "https://www.nestdev.it/agent-mesh/",
+            "mark": {
+                "type": "monogram",
+                "text": "AM",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit agent-mesh ↗",
+                    "url": "https://www.nestdev.it/agent-mesh/"
+                }
+            ]
+        },
+        {
+            "id": "noderouter",
+            "name": "Noderouter",
+            "role": "Open-source project",
+            "type": "AzerothCore",
+            "dates": "",
+            "highlights": [
+                "Programmable proxy with integrated discovery-service, tunneling and DNS."
+            ],
+            "tech": "",
+            "url": "https://azerothcore.github.io/noderouter/",
+            "mark": {
+                "type": "monogram",
+                "text": "NR",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [
+                {
+                    "label": "Visit Noderouter ↗",
+                    "url": "https://azerothcore.github.io/noderouter/"
+                }
+            ]
+        }
+    ],
+    "groups": [
+        {
+            "id": "lab",
+            "name": "NestDev [Lab]",
+            "owner": "nestdev",
+            "members": [
+                "agentwheel",
+                "syncwheel",
+                "nestjs-yalc",
+                "portable-agent-memory",
+                "agent-core-toolkit",
+                "agent-mesh"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "from": "nestdev",
+            "to": "odido",
+            "type": "client",
+            "path": "M287 169H322V97H549V112"
+        },
+        {
+            "from": "nestdev",
+            "to": "game7",
+            "type": "client",
+            "path": "M287 169H322V97H875V112"
+        },
+        {
+            "from": "nestdev",
+            "to": "internal",
+            "type": "own-project",
+            "path": "M287 169H322V97H1106V112"
+        },
+        {
+            "from": "nestdev",
+            "to": "lab",
+            "type": "owns-group",
+            "path": "M158 257V324"
+        },
+        {
+            "from": "lab",
+            "to": "agentwheel",
+            "type": "open-source",
+            "path": "M56 393V453H70"
+        },
+        {
+            "from": "lab",
+            "to": "syncwheel",
+            "type": "open-source",
+            "path": "M431 393V453H445"
+        },
+        {
+            "from": "lab",
+            "to": "nestjs-yalc",
+            "type": "open-source",
+            "path": "M56 453V589H70"
+        },
+        {
+            "from": "lab",
+            "to": "portable-agent-memory",
+            "type": "open-source",
+            "path": "M431 453V589H445"
+        },
+        {
+            "from": "azerothcore",
+            "to": "noderouter",
+            "type": "open-source",
+            "path": "M1052 548V610"
+        },
+        {
+            "from": "lab",
+            "to": "bitvavo",
+            "type": "production",
+            "label": "Lab tools in production",
+            "path": "M425 717V806H175V838"
+        },
+        {
+            "from": "lab",
+            "to": "embed",
+            "type": "production",
+            "label": "Lab tools in production",
+            "path": "M425 717V806H485V838"
+        },
+        {
+            "from": "lab",
+            "to": "azerothcore",
+            "type": "production",
+            "label": "Lab tools in production",
+            "path": "M425 717V806H795V838"
+        },
+        {
+            "from": "lab",
+            "to": "odido",
+            "type": "production",
+            "label": "Lab tools in production",
+            "path": "M425 717V806H1105V838"
+        }
+    ],
+    "career": [
+        "embed",
+        "bitvavo",
+        "harlem",
+        "redsquare",
+        "lenus",
+        "graffelab",
+        "sevenweb",
+        "hyperweb"
+    ],
+    "layout": {
+        "consultancy": [
+            {
+                "id": "odido",
+                "label": "Current client",
+                "className": "odido-node"
+            },
+            {
+                "id": "game7",
+                "label": "Client"
+            },
+            {
+                "id": "internal",
+                "label": "Own projects"
+            }
+        ],
+        "lab": [
+            "agentwheel",
+            "syncwheel",
+            "nestjs-yalc",
+            "portable-agent-memory"
+        ],
+        "azeroth": [
+            "azerothcore",
+            "noderouter"
+        ],
+        "production": [
+            "bitvavo",
+            "embed",
+            "azerothcore",
+            "odido"
+        ],
+        "graphCareer": [
+            "harlem",
+            "redsquare",
+            "lenus",
+            "graffelab",
+            "sevenweb",
+            "hyperweb"
+        ],
+        "listGroups": [
+            {
+                "id": "company",
+                "nodes": [
+                    "nestdev",
+                    "odido",
+                    "game7",
+                    "internal"
+                ]
+            },
+            {
+                "id": "lab",
+                "nodes": [
+                    "agentwheel",
+                    "syncwheel",
+                    "nestjs-yalc",
+                    "portable-agent-memory",
+                    "agent-core-toolkit",
+                    "agent-mesh"
+                ]
+            },
+            {
+                "id": "azeroth",
+                "nodes": [
+                    "azerothcore",
+                    "noderouter"
+                ]
+            },
+            {
+                "id": "earlier",
+                "nodes": [
+                    "embed",
+                    "bitvavo",
+                    "harlem",
+                    "redsquare",
+                    "lenus",
+                    "graffelab",
+                    "sevenweb",
+                    "hyperweb"
+                ]
+            }
+        ],
+        "printPageOne": [
+            "nestdev",
+            "odido",
+            "game7",
+            "internal"
+        ],
+        "printPageTwo": [
+            "embed",
+            "bitvavo",
+            "harlem",
+            "redsquare",
+            "lenus",
+            "graffelab",
+            "sevenweb",
+            "hyperweb"
+        ]
+    }
+}

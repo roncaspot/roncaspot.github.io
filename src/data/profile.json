@@ -1,0 +1,81 @@
+{
+    "siteTitle": "Joseph Ronca — Backend, platform & technical leadership",
+    "description": "Joseph (Giuseppe) Ronca — Senior Backend & Platform Engineer and Tech Lead. Haarlem, NL. Open to contract and full-time roles.",
+    "wordmark": {
+        "base": "roncaspot",
+        "accent": "."
+    },
+    "name": "Joseph (Giuseppe) Ronca",
+    "careerStartYear": 2011,
+    "availability": "Open to contract & full-time roles",
+    "headline": {
+        "firstLine": "Systems",
+        "secondLine": "that ",
+        "accent": "scale."
+    },
+    "roleLines": [
+        "Senior Backend & Platform Engineer",
+        "and Tech Lead"
+    ],
+    "location": "Haarlem, NL",
+    "workStyle": "Remote-first",
+    "photo": {
+        "src": "/assets/hero/granada.jpg",
+        "alt": "Joseph sitting on a wall overlooking Granada",
+        "caption": "Granada"
+    },
+    "contacts": {
+        "email": "roncalabs@gmail.com",
+        "emailHref": "mailto:roncalabs@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/joseph-ronca/",
+        "linkedinDisplay": "linkedin.com/in/joseph-ronca/",
+        "github": "https://github.com/yehonal",
+        "githubDisplay": "github.com/yehonal",
+        "website": "https://roncaspot.github.io",
+        "websiteDisplay": "roncaspot.github.io",
+        "nestdev": "https://www.nestdev.it/"
+    },
+    "cvDownload": "/curriculum.pdf",
+    "cvDownloadName": "Joseph-Ronca-CV.pdf",
+    "identityIds": ["odido", "bitvavo", "game7", "azerothcore", "nestdev"],
+    "about": {
+        "introTemplate": "I'm a backend and platform engineer with {{years}}+ years of experience, most recently as a tech lead and platform engineer in fintech, payments and telecom. I build TypeScript/NestJS systems on AWS and Kubernetes and make them easy to run: observability, CI/CD, security gates, and a developer experience that lets teams ship fast without breaking production.",
+        "expanded": [
+            {
+                "type": "paragraph",
+                "html": "Most recently at Odido (via <a href=\"https://www.nestdev.it/\">NestDev</a>): structured logging and Elastic dashboards across the customer self-service platform, personal-data redaction in logs, supply-chain security gates in CI, and account and authentication features end to end."
+            },
+            {
+                "type": "paragraph",
+                "html": "Before that:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Bitvavo – Tech Lead: led the migration of a large multi-service platform from JavaScript to TypeScript with NestJS, GraphQL Federation and React, plus hiring, coaching and sprint management.",
+                    "Embed (ex Fung Payments) – Platform Engineer: event-driven AWS platform (Lambda, Fargate, SQS/SNS), CDK infrastructure as code, observability and PCI DSS.",
+                    "Game7 – Tech Lead: backend architecture, developer experience and the infrastructure behind a large-scale MMORPG."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "html": "Founder and lead developer of AzerothCore, an open-source, modular MMO server framework in C++ started in 2016: 8,900+ stars, 3,800+ forks and 600+ contributors, used in production by public game servers."
+            },
+            {
+                "type": "paragraph",
+                "html": "Stack: TypeScript, Node.js, NestJS, React/Next.js, PostgreSQL/MySQL, AWS (CDK, Lambda, ECS/Fargate), Kubernetes, GitHub Actions, Elastic/Kibana. Also C++ and Java."
+            },
+            {
+                "type": "paragraph",
+                "html": "Open to contract and full-time roles · Haarlem, NL · remote-first."
+            }
+        ]
+    },
+    "print": {
+        "kicker": "Haarlem, NL · Open to contract and full-time roles",
+        "title": "Senior Backend & Platform Engineer · Tech Lead",
+        "stack": "TypeScript · NestJS · AWS · Kubernetes | Observability & DevEx",
+        "contactLineOne": "roncalabs@gmail.com · github.com/yehonal",
+        "contactLineTwo": "linkedin.com/in/joseph-ronca/ · roncaspot.github.io"
+    }
+}

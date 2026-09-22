@@ -17,6 +17,7 @@ node_modules
 
 # production
 /build
+/dist
 
 /var/*
 !/var/.gitkeep
@@ -104,7 +105,5 @@ yarn-error.log*
 
 /src/conf/*
 !/src/conf/dist
-
-package-lock.json
 
 .env

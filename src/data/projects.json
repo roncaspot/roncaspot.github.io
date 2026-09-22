@@ -1,0 +1,57 @@
+{
+    "featured": [
+        {
+            "name": "AzerothCore",
+            "year": "2017",
+            "url": "https://github.com/azerothcore",
+            "description": "AzerothCore (MMO Server - C++, MySQL, PHP & Symfony, Node.js)"
+        },
+        {
+            "name": "NestJS-Yalc",
+            "year": "2021",
+            "url": "https://www.nestdev.it/nestjs-yalc/",
+            "description": "Nest-yalc stands for Nestjs - Yet Another Library Collection and it's a full-featured library that extends NestJS"
+        },
+        {
+            "name": "Noderouter",
+            "year": "2020",
+            "url": "https://azerothcore.github.io/noderouter/",
+            "description": "Programmable proxy with integrated discovery-service, tunneling and DNS"
+        },
+        {
+            "name": "RoncaSpot",
+            "year": "2019",
+            "url": "https://roncaspot.github.io",
+            "description": "Personal website and resume developed with ReactJS using my modular Universal-PWA boilerplate"
+        },
+        {
+            "name": "RST Lab",
+            "year": "2018",
+            "url": "https://www.redsquareteam.eu/iscrizione-eventi",
+            "description": "Enterprise Programming by Red Square Lab (Role: Main Speaker & Organizer). Full-stack JS, C++, PHP"
+        },
+        {
+            "name": "Seminar",
+            "year": "2017",
+            "description": "From Cryptocoin to Cryptocurrency (Role: Guest)"
+        }
+    ],
+    "archive": [
+        { "name": "Ease Platform", "year": "2019", "url": "https://www.itsease.com/", "description": "Marketplace for Freelancers - Stack: React/Redux/Node.js/MySQL" },
+        { "name": "PlaceMe", "year": "2019", "url": "https://placemeliving.com/", "description": "Airbnb \"Clone\" for Boston University students - Stack: React/Redux/Node.js/MongoDB" },
+        { "name": "Tinyspoon", "year": "2019", "description": "Recipe hybrid app and web dashboard - Stack: React/GraphQL/Apollo/Node.js" },
+        { "name": "Sequelize-graphql-schema", "year": "2019", "url": "https://github.com/almost-full-stack/sequelize-graphql-schema", "description": "JavaScript library to automatically generate a GraphQL API from Sequelize models;" },
+        { "name": "Universal Node", "year": "2019", "url": "https://github.com/HW-Core/universal-node", "description": "boilerplate for server applications (Node.js, GraphQL, Sequelize, MySQL, SQLite)" },
+        { "name": "Universal PWA", "year": "2019", "url": "https://github.com/HW-Core/universal-pwa", "description": "boilerplate for PWA and hybrid applications (React, GraphQL/Apollo)" },
+        { "name": "App Framework", "year": "2017", "url": "https://github.com/Drassil/app-framework", "description": "framework for building TWA apps (AngularJS/Apache Cordova)" },
+        { "name": "Drassil Launcher", "year": "2017", "url": "https://app.drassil.net", "description": "Desktop and Mobile \"Steam-like\" application. Built with cordova and electron." },
+        { "name": "Git Wiki", "year": "2017/2018", "url": "https://github.com/Drassil/git-wiki", "description": "Static wiki built for GitHub/GitLab and Jekyll" },
+        { "name": "IBM Hackathon", "year": "2016", "description": "2nd place with SOuL Project. PhoneGap & JavaScript stack (Role: Backend Developer)" },
+        { "name": "Palmapp", "year": "2016", "url": "http://www.palmapp.it", "description": "Hybrid mobile app developed with jQuery, cordova, php for Palma Campania Town" },
+        { "name": "WP Contract Form", "year": "2016", "url": "https://github.com/hyperweb2/contract-form", "description": "WordPress Plugin to Sign Contract Forms" },
+        { "name": "SOuL App", "year": "2015", "url": "https://github.com/soul-source/soul-app-full", "description": "Life Emergency & Reports (RESTFul cross-platform app - Hw-Core Java server and Hw-Core JS frontend)" },
+        { "name": "Directory Structure", "year": "2014", "url": "https://github.com/HW-Core/directory-structure", "description": "A Directory Structure Standard for any kind of project" },
+        { "name": "Hw-Core framework", "year": "2011", "url": "https://github.com/hw-core", "description": "multilanguage framework & set of libraries to build apps" },
+        { "name": "CavaMultimediale", "year": "2010", "url": "https://github.com/Yehonal/cavamultimediale", "description": "Abandonware web porting (SPA - JS, Hw-Core JS Framework)" }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "studies": [
+        {
+            "name": "Information Technology",
+            "institution": "University of Salerno, Department of Information Technology",
+            "dates": "2012 – 2019",
+            "level": "EQF level 6",
+            "subjectsLabel": "Subjects:",
+            "subjects": [
+                "COMPUTER ARCHITECTURE",
+                "MATHEMATICAL ANALYSIS",
+                "OPERATIONAL RESEARCH",
+                "DISCRETE MATHEMATICS",
+                "PROGRAMMING",
+                "PROGRAMMING 2",
+                "ALGORITHMS",
+                "DATABASES",
+                "PHYSICS",
+                "SOFTWARE ENGINEERING",
+                "ENGLISH",
+                "HUMAN COMPUTER INTERACTION",
+                "OPERATING SYSTEMS",
+                "ADVANCED PROGRAMMING TECHNIQUES",
+                "MATHEMATICAL AND STATISTICAL METHODS",
+                "COMPUTER NETWORKS",
+                "THEORY OF COMPUTATION",
+                "DISTRIBUTED PROGRAMMING",
+                "NUMERICAL ANALYSIS",
+                "MOBILE PROGRAMMING",
+                "WEB DEVELOPMENT",
+                "DATA STRUCTURES"
+            ],
+            "thesisLabel": "Thesis",
+            "thesis": "Unilance: the future of work",
+            "thesisDescription": "Marketplace for freelancers based on cryptocurrencies"
+        },
+        {
+            "name": "I.T. High School",
+            "institution": "I.T.I.S Focaccia",
+            "dates": "2007 – 2009",
+            "level": "EQF level 5",
+            "paragraphs": [
+                "Computer science.",
+                "Programming languages: Java, Delphi, C, C++, PHP, ASP. Databases: MySQL, Access.",
+                "Network management.",
+                "Electronics: circuits, telecommunications and modulation. Statistics, Algebra"
+            ]
+        },
+        {
+            "name": "Scientific high school",
+            "institution": "A. Genoino",
+            "dates": "2004 – 2006",
+            "subjectsLabel": "Subjects:",
+            "paragraphs": [
+                "Science, Physics, Maths, Italian, English, French, Latin, Geography, History"
+            ]
+        }
+    ],
+    "outsideWork": [
+        "Travel",
+        "Photography",
+        "Music & Instruments",
+        "Videogames",
+        "Technology and hardware mods",
+        "Science"
+    ]
+}
