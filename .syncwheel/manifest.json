@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "defaults": {
+    "canonical_remote": "origin",
+    "publication_remote": "origin",
+    "base_branch": "master",
+    "base_ref": "origin/master",
+    "integration_membership": "required"
+  },
+  "integration": {
+    "branch": "master",
+    "base": "origin/master",
+    "strategy": "cherry-pick",
+    "stacks": []
+  },
+  "stacks": [],
+  "syncwheel_tracking": "git-tracked",
+  "coordination": {
+    "mode": "active-active",
+    "id": "default",
+    "remote": "origin",
+    "state_branch": "syncwheel/state/default",
+    "gc": {
+      "worktree_grace_days": 7,
+      "backup_retention_days": 30,
+      "backup_keep": 2
+    },
+    "claims": "advisory"
+  }
+}
