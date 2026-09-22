@@ -1,0 +1,73 @@
+{
+  "changed_refs": {
+    "refs/heads/feat/vite-react-rewrite": "5cb05639e4077ce5eed40fec47eb916d12dff91a"
+  },
+  "claims": {
+    "refs/heads/feat/vite-react-rewrite": "f212a309ba464bd49966290797a1c0c28ca525a9"
+  },
+  "coordination_id": "default",
+  "created_at": "2026-09-22T20:33:15+00:00",
+  "installation_id": "e83434d1-e09b-4dd1-8bdf-a5f7970573c6",
+  "managed_refs": {
+    "refs/heads/feat/vite-react-rewrite": "5cb05639e4077ce5eed40fec47eb916d12dff91a",
+    "refs/heads/master": "237ab1e766acf6ee3dafedcfe0af394f9b5e99d9"
+  },
+  "manifest": {
+    "coordination": {
+      "gc": {
+        "backup_keep": 2,
+        "backup_retention_days": 30,
+        "worktree_grace_days": 7
+      },
+      "id": "default",
+      "mode": "active-active",
+      "state_branch": "syncwheel/state/default"
+    },
+    "defaults": {
+      "base_branch": "master",
+      "base_ref": {
+        "kind": "remote-ref",
+        "ref": "refs/heads/master",
+        "role": "canonical"
+      }
+    },
+    "integration": {
+      "base": {
+        "kind": "remote-ref",
+        "ref": "refs/heads/master",
+        "role": "canonical"
+      },
+      "branch": "master",
+      "stacks": [
+        "vite-react-rewrite"
+      ],
+      "strategy": "cherry-pick"
+    },
+    "stacks": [
+      {
+        "base": {
+          "kind": "remote-ref",
+          "ref": "refs/heads/master",
+          "role": "canonical"
+        },
+        "branch": "feat/vite-react-rewrite",
+        "commits": [
+          "440c5d814bb122f1baf3dff978b2f865f4b1c83a"
+        ],
+        "id": "vite-react-rewrite",
+        "integration_branch": "master",
+        "target_branch": "master"
+      }
+    ],
+    "version": 2
+  },
+  "manifest_digest": "b4a6d02627d6b7fb43fa07b6aea4a29914b164a0f6b15a8ef3d2e375a27dcb49",
+  "operation_token": "d452b117-f367-46a2-8f04-b5936c17b27d",
+  "parent_state": null,
+  "projection_status": "partial",
+  "publication_id": "e8551234-e8d6-47a6-ad2b-9d086f435859",
+  "publication_scope": "stack:vite-react-rewrite",
+  "schema_version": 2,
+  "syncwheel_version": "0.43.31",
+  "tombstones": []
+}
