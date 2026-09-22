@@ -1,0 +1,11 @@
+{
+  "changed_refs": [
+    "refs/heads/feat/vite-react-rewrite"
+  ],
+  "claimed_at": "2026-09-22T20:33:15+00:00",
+  "coordination_id": "default",
+  "operation_token": "d452b117-f367-46a2-8f04-b5936c17b27d",
+  "publication_scope": "stack:vite-react-rewrite",
+  "source_ref": "refs/heads/feat/vite-react-rewrite",
+  "syncwheel_version": "0.43.31"
+}
