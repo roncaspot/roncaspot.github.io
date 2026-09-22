@@ -1,0 +1,44 @@
+[
+    {
+        "file": "odido.svg",
+        "url": "https://assets.odido.nl/300x88/edfb2ac1d9/90s-odido-logo-rgb.svg?cv=1784626802084",
+        "date": "2026-09-22",
+        "bytes": 7576
+    },
+    {
+        "file": "azerothcore.png",
+        "url": "https://www.azerothcore.org/images/logo.png",
+        "date": "2026-09-22",
+        "bytes": 18852
+    },
+    {
+        "file": "nestdev.png",
+        "url": "https://www.nestdev.it/assets/logo-nestdev.png",
+        "date": "2026-09-22",
+        "bytes": 5079
+    },
+    {
+        "file": "lenus.svg",
+        "url": "https://www.lenus.it/wp-content/themes/lenus-media-theme/assets/img/logo-lenusmedia.svg",
+        "date": "2026-09-22",
+        "bytes": 82535
+    },
+    {
+        "file": "bitvavo.svg",
+        "url": "https://bitvavo.com/en",
+        "date": "2026-09-22",
+        "note": "First inline header logo SVG, extracted verbatim without changing markup."
+    },
+    {
+        "file": "harlem.svg",
+        "url": "https://harlemnext.com",
+        "date": "2026-09-22",
+        "note": "First inline header logo SVG, extracted verbatim without changing markup."
+    },
+    {
+        "file": "game7.svg",
+        "url": "https://game7.io/favicon.svg",
+        "date": "2026-09-22",
+        "note": "Official SVG favicon linked by the site; served as the site\u2019s G7 mark. Main homepage returned HTTP 403; fallback application document linked this asset."
+    }
+]
