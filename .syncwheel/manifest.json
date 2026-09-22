@@ -11,9 +11,28 @@
     "branch": "master",
     "base": "origin/master",
     "strategy": "cherry-pick",
-    "stacks": []
+    "stacks": [
+      "vite-react-rewrite"
+    ]
   },
-  "stacks": [],
+  "stacks": [
+    {
+      "id": "vite-react-rewrite",
+      "branch": "feat/vite-react-rewrite",
+      "base": "origin/master",
+      "target_remote": "origin",
+      "target_branch": "master",
+      "integration_branch": "master",
+      "commits": [],
+      "state": "published",
+      "publication": {
+        "enabled": true
+      },
+      "meta": {
+        "purpose": "Rebuild the site with Vite + React, content in data files"
+      }
+    }
+  ],
   "syncwheel_tracking": "git-tracked",
   "coordination": {
     "mode": "active-active",
@@ -26,5 +45,8 @@
       "backup_keep": 2
     },
     "claims": "advisory"
-  }
+  },
+  "repository_mode": "delivery",
+  "syncwheel_worktree_root": ".syncwheel/wt",
+  "channels": []
 }
