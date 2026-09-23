@@ -1,16 +1,16 @@
 {
   "channels": [],
   "coordination": {
-    "claims": "advisory",
-    "gc": {
-      "backup_keep": 2,
-      "backup_retention_days": 30,
-      "worktree_grace_days": 7
-    },
-    "id": "default",
     "mode": "active-active",
+    "id": "default",
     "remote": "origin",
-    "state_branch": "syncwheel/state/default"
+    "state_branch": "syncwheel/state/default",
+    "gc": {
+      "worktree_grace_days": 7,
+      "backup_retention_days": 30,
+      "backup_keep": 2
+    },
+    "claims": "advisory"
   },
   "defaults": {
     "base_branch": "master",
@@ -33,7 +33,8 @@
       "base": "origin/master",
       "branch": "feat/vite-react-rewrite",
       "commits": [
-        "440c5d814bb122f1baf3dff978b2f865f4b1c83a"
+        "440c5d814bb122f1baf3dff978b2f865f4b1c83a",
+        "564819b8ddc3e0e867f27cba318ccdc92c55d6dc"
       ],
       "id": "vite-react-rewrite",
       "integration_branch": "master",
