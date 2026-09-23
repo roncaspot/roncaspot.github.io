@@ -11,7 +11,13 @@
     "headline": {
         "firstLine": "Systems",
         "secondLine": "that ",
-        "accent": "scale."
+        "accent": "scale.",
+        "accents": [
+            "scale.",
+            "ship.",
+            "stay up.",
+            "explain themselves."
+        ]
     },
     "roleLines": [
         "Senior Backend & Platform Engineer",
@@ -21,8 +27,7 @@
     "workStyle": "Remote-first",
     "photo": {
         "src": "/assets/hero/granada.jpg",
-        "alt": "Joseph sitting on a wall overlooking Granada",
-        "caption": "Granada"
+        "alt": "Joseph sitting on a wall overlooking Granada"
     },
     "contacts": {
         "email": "roncalabs@gmail.com",
@@ -37,7 +42,14 @@
     },
     "cvDownload": "/curriculum.pdf",
     "cvDownloadName": "Joseph-Ronca-CV.pdf",
-    "identityIds": ["odido", "bitvavo", "game7", "azerothcore", "nestdev"],
+    "identityIds": [
+        "odido",
+        "bitvavo",
+        "embed",
+        "game7",
+        "azerothcore",
+        "nestdev"
+    ],
     "about": {
         "introTemplate": "I'm a backend and platform engineer with {{years}}+ years of experience, most recently as a tech lead and platform engineer in fintech, payments and telecom. I build TypeScript/NestJS systems on AWS and Kubernetes and make them easy to run: observability, CI/CD, security gates, and a developer experience that lets teams ship fast without breaking production.",
         "expanded": [

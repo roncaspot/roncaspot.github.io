@@ -1,3 +1,16 @@
+import { useEffect, useState } from "react";
+
+function useRotatingWord(words, interval = 2800) {
+    const [index, setIndex] = useState(0);
+    useEffect(() => {
+        if (!words || words.length < 2) return undefined;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+        const timer = setInterval(() => setIndex((current) => (current + 1) % words.length), interval);
+        return () => clearInterval(timer);
+    }, [words, interval]);
+    return index;
+}
+
 export default function Hero({
     profile,
     ui,
@@ -6,6 +19,8 @@ export default function Hero({
     onThemeChange,
     onOpenNode,
 }) {
+    const words = profile.headline.accents ?? [profile.headline.accent];
+    const wordIndex = useRotatingWord(words);
     return (
         <div className="vista-frame">
             <header className="vista-nav">
@@ -61,7 +76,9 @@ export default function Hero({
                         {profile.headline.firstLine}
                         <br />
                         {profile.headline.secondLine}
-                        <em>{profile.headline.accent}</em>
+                        <em className="rotating" key={wordIndex}>
+                            {words[wordIndex]}
+                        </em>
                     </h1>
                     <p className="role">
                         {profile.roleLines.map((line, index) => (
@@ -95,7 +112,6 @@ export default function Hero({
                         {profile.workStyle}
                     </p>
                 </div>
-                <span className="photo-note">{profile.photo.caption}</span>
             </section>
             <section className="logo-band" aria-label={ui.identity.ariaLabel}>
                 <p className="band-intro">
@@ -116,17 +132,23 @@ export default function Hero({
                                 onClick={(event) => onOpenNode(id, event.currentTarget)}
                             >
                                 <div className="mark-line">
-                                    <img
-                                        className={["mark", node.mark.markClass]
-                                            .filter(Boolean)
-                                            .join(" ")}
-                                        src={node.mark.src}
-                                        alt=""
-                                        width={node.mark.identityWidth}
-                                        height={node.mark.identityHeight}
-                                    />
+                                    {node.mark.type === "image" ? (
+                                        <img
+                                            className={["mark", node.mark.markClass]
+                                                .filter(Boolean)
+                                                .join(" ")}
+                                            src={node.mark.src}
+                                            alt=""
+                                            width={node.mark.identityWidth}
+                                            height={node.mark.identityHeight}
+                                        />
+                                    ) : (
+                                        <span className="mark mark-text">{node.mark.text}</span>
+                                    )}
                                 </div>
-                                <span className="brand-name">{node.name}</span>
+                                <span className="brand-name">
+                                    {ui.identity.names?.[id] ?? node.name}
+                                </span>
                                 <span className="brand-label">
                                     {ui.identity.labels[id]}
                                 </span>

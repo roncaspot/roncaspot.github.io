@@ -48,9 +48,13 @@
             "bitvavo": "Earlier employer",
             "game7": "Earlier client",
             "azerothcore": "Open source",
-            "nestdev": "Own company"
+            "nestdev": "Own company",
+            "embed": "Earlier employer"
         },
-        "nestdevSite": "nestdev.it ↗"
+        "nestdevSite": "nestdev.it ↗",
+        "names": {
+            "embed": "Embed"
+        }
     },
     "sections": {
         "about": {
