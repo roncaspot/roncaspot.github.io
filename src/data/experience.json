@@ -96,11 +96,11 @@
             "tech": "TypeScript, C++, Rust.",
             "mark": {
                 "type": "image",
-                "src": "/assets/logos/game7.svg",
+                "src": "/assets/logos/game7.png",
                 "className": "logo-game7",
                 "markClass": "mark-game7",
-                "identityWidth": 48,
-                "identityHeight": 48
+                "identityWidth": 46,
+                "identityHeight": 46
             },
             "contextHtml": "",
             "relationshipsHtml": [],
@@ -158,9 +158,12 @@
             ],
             "tech": "React/NextJS, AWS CDK, IAM, Lambda, SQS, SNS, Cognito, DynamoDB, TypeScript, NestJS, GitHub pipeline, Docker, Jest.",
             "mark": {
-                "type": "monogram",
-                "text": "E",
-                "className": "monogram"
+                "type": "image",
+                "src": "/assets/logos/embed.png",
+                "className": "logo-embed",
+                "markClass": "mark-embed",
+                "identityWidth": 44,
+                "identityHeight": 44
             },
             "contextHtml": "",
             "relationshipsHtml": [

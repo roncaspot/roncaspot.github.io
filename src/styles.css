@@ -527,22 +527,25 @@
 .vista-frame .mark{display:block;object-fit:contain;filter:grayscale(1);opacity:.95}
 .vista-frame .mark-nestdev,.vista-frame .mark-lenus{filter:grayscale(1) invert(var(--white-mark-invert))}
 .vista-frame .mark-bitvavo,.vista-frame .mark-harlem{filter:grayscale(1) invert(var(--black-mark-invert))}
-.vista-frame .mark-game7{filter:grayscale(1) invert(var(--white-mark-invert));mix-blend-mode:var(--game-blend,multiply)}
+.vista-frame .mark-game7{filter:grayscale(1)}
+.vista-frame .mark-embed{filter:grayscale(1) invert(var(--black-mark-invert))}
+.vista-frame .brand:is(:hover,:focus-visible) .mark-embed{filter:var(--embed-hover,none)}
 .vista-frame .brand:is(:hover,:focus-visible) .mark-nestdev,.vista-frame .brand:is(:hover,:focus-visible) .mark-lenus{filter:invert(var(--white-mark-invert))}
 .vista-frame .brand:is(:hover,:focus-visible) :is(.mark-bitvavo,.mark-harlem){filter:invert(var(--black-mark-invert))}
 .vista-frame .mark-text{display:flex;align-items:flex-end;font:700 27px/1 'Sora',sans-serif;letter-spacing:-1px;color:var(--ink);opacity:.72}
 .vista-frame .brand:is(:hover,:focus-visible) .mark-text{opacity:1;color:var(--accent)}
 .vista-frame .brand-name{font-size:11px;font-weight:600;line-height:1.5}.vista-frame .brand-label{font-size:10px;color:var(--muted);margin-top:4px;white-space:nowrap}
 /* No mark container has a fill, border, radius, padding or shadow. */
-:root{--white-mark-invert:1;--black-mark-invert:0}
-:root[data-theme="dark"]{--white-mark-invert:0;--black-mark-invert:1}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--white-mark-invert:0;--black-mark-invert:1}}
+:root{--white-mark-invert:1;--black-mark-invert:0;--embed-hover:none}
+:root[data-theme="dark"]{--white-mark-invert:0;--black-mark-invert:1;--embed-hover:grayscale(1) invert(1)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--white-mark-invert:0;--black-mark-invert:1;--embed-hover:grayscale(1) invert(1)}}
 .inline-mark{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;position:static!important;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:48px;height:28px;vertical-align:middle}
 .inline-mark img{width:100%;height:100%;object-fit:contain;filter:grayscale(1)}
 .inline-mark.monogram{width:auto!important;height:auto!important;min-width:18px;font:inherit!important;letter-spacing:0;color:inherit!important;opacity:.62}
 .inline-mark.logo-nestdev img,.inline-mark.logo-lenus img{filter:grayscale(1) invert(var(--white-mark-invert))}
 .inline-mark.logo-bitvavo img,.inline-mark.logo-harlem img{filter:grayscale(1) invert(var(--black-mark-invert))}
-.inline-mark.logo-game7 img{filter:grayscale(1) invert(var(--white-mark-invert));mix-blend-mode:var(--game-blend,multiply)}
+.inline-mark.logo-game7 img{filter:grayscale(1)}
+.inline-mark.logo-embed img{filter:grayscale(1) invert(var(--black-mark-invert))}
 :root[data-theme="dark"]{--game-blend:screen}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--game-blend:screen}}
 .node-title,.production-title,.history-identity{display:flex;align-items:center;gap:11px;min-width:0;text-align:left}
@@ -568,7 +571,7 @@
 .detail-identity .inline-mark{width:106px;height:48px}
 :is(button,summary,a):is(:hover,:focus-visible,:focus-within) .inline-mark img,.node:is(:hover,:focus-within) .inline-mark img,.cluster-top h3:is(:hover,:focus-within) .inline-mark img,.detail-panel .inline-mark img{filter:none}
 /* Whole rows/cards provide contrast for original white or black artwork. */
-:is(button,summary):has(.logo-nestdev,.logo-lenus,.logo-game7):is(:hover,:focus-visible,:focus-within){background:#183e5e!important;color:#f3f5f4!important;--ink:#f3f5f4;--muted:#c1d3df;--game-blend:screen}
+:is(button,summary):has(.logo-nestdev,.logo-lenus):is(:hover,:focus-visible,:focus-within){background:#183e5e!important;color:#f3f5f4!important;--ink:#f3f5f4;--muted:#c1d3df;--game-blend:screen}
 :is(button,summary):has(.logo-bitvavo,.logo-harlem):is(:hover,:focus-visible,:focus-within){background:#eef4f8!important;color:#183e5e!important;--ink:#183e5e;--muted:#506a7e}
 .cluster-top h3:focus-within{background:#183e5e;color:#f3f5f4}
 .detail-panel:is([data-entity="nestdev"],[data-entity="lenus"],[data-entity="game7"]){--surface:#183e5e;--paper:#183e5e;--ink:#f3f5f4;--muted:#c1d3df;--line:#547086;--game-blend:screen}
@@ -586,7 +589,7 @@
 .vista-frame .logo-band{display:block;height:auto;padding:32px 24px 38px}.vista-frame .band-intro{font-size:10px;margin-bottom:28px}.vista-frame .band-intro br{display:none}.vista-frame .marks{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 35px}.vista-frame .brand{min-width:0}.vista-frame .mark-line{height:48px;margin-bottom:13px}.vista-frame .mark-odido{width:104px;height:31px}.vista-frame .mark-bitvavo{width:120px;height:23px}.vista-frame .mark-game7{width:43px;height:43px;margin-bottom:-5px}.vista-frame .mark-azerothcore{width:53px;height:35px}.vista-frame .mark-nestdev{width:35px;height:35px}
 .career-history button{grid-template-columns:1fr;gap:12px;padding:22px 5px}.career-history .history-date,.career-history .history-identity,.career-history .history-role{grid-column:1;grid-row:auto}.career-history .history-role{padding-left:0}.career-history .history-identity .inline-mark{grid-column:auto;grid-row:auto;width:60px;height:30px}.career-history .history-name{font-size:19px}.production-node strong{font-size:20px}.list-identity .inline-mark{width:44px;height:26px}
 }
-@media print{.print-cv{--white-mark-invert:1;--black-mark-invert:0;--game-blend:multiply}.print-cv h3 .inline-mark{width:30px;height:18px;background:none!important;padding:0!important;border:0!important;box-shadow:none!important;border-radius:0;margin-right:6px}.print-cv h3 .monogram{background:none!important;color:#183e5e!important;font:600 7pt Arial,sans-serif!important}.print-cv .inline-mark img{filter:grayscale(1)}.print-cv .logo-nestdev img,.print-cv .logo-lenus img,.print-cv .logo-game7 img{filter:grayscale(1) invert(1)}}
+@media print{.print-cv{--white-mark-invert:1;--black-mark-invert:0;--game-blend:multiply}.print-cv h3 .inline-mark{width:30px;height:18px;background:none!important;padding:0!important;border:0!important;box-shadow:none!important;border-radius:0;margin-right:6px}.print-cv h3 .monogram{background:none!important;color:#183e5e!important;font:600 7pt Arial,sans-serif!important}.print-cv .inline-mark img{filter:grayscale(1)}.print-cv .logo-nestdev img,.print-cv .logo-lenus img{filter:grayscale(1) invert(1)}}
 /* Optical adjustments for wordmarks versus compact symbols. */
 .node-title{font-size:22px}.lab-nodes .node-title{font-size:17px}
 .production-title{font-size:20px!important;color:var(--ink)!important}
@@ -647,6 +650,6 @@
     .reveal { opacity: 1 !important; transform: none !important; }
 }
 @media (prefers-reduced-motion: no-preference) {
-    .vista-frame h1 .rotating { display: inline-block; animation: word-in .5s cubic-bezier(.22,.61,.36,1) both; }
+    .vista-frame h1 .rotating { display: inline-block; white-space: nowrap; animation: word-in .5s cubic-bezier(.22,.61,.36,1) both; }
     @keyframes word-in { from { opacity: 0; transform: translateY(.22em) rotate(-1.2deg); } to { opacity: 1; transform: none; } }
 }
