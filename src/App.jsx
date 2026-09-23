@@ -42,6 +42,29 @@ export default function App() {
     }, []);
 
     useEffect(() => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+        const targets = document.querySelectorAll(
+            ".vista-frame .brand-stack, .vista-frame .brand, .content-section, .experience .intro, .complete-map, .career-history li, .project-card, .skills-grid article, .archive",
+        );
+        targets.forEach((element, index) => {
+            element.classList.add("reveal");
+            element.style.setProperty("--reveal-delay", `${(index % 5) * 70}ms`);
+        });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                });
+            },
+            { rootMargin: "0px 0px -8% 0px", threshold: 0.06 },
+        );
+        targets.forEach((element) => observer.observe(element));
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
         if (theme === "system") {
             delete document.documentElement.dataset.theme;
         } else {
