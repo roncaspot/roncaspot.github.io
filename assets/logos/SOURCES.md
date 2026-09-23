@@ -23,3 +23,10 @@ Fetched on 2026-09-22. Original files are saved without recolouring, redrawing o
 | Hyperweb | https://hyperweb.it and https://hyperweb.io | The .it candidate did not resolve. The .io page is a Web3 business without evidence linking it to the earlier Cava de’ Tirreni engagement, so its logo is not used. |
 
 Internal tooling, individual Lab projects and Noderouter use neutral initial tiles; their logos were outside the requested fetch list. Game7 uses the site-linked SVG favicon, not a separately sourced full wordmark. The white NestDev and Lenus Media marks sit on neutral charcoal tiles so its original colours remain legible.
+
+## Added on the owner's request, 2026-09-23
+
+| Organisation | File | Source | Notes |
+| --- | --- | --- | --- |
+| Embed | [embed.png](embed.png) | Image supplied by the owner (Google image cache thumbnail, 200x200 JPEG) | embed.com now redirects to a domain-sale page, so no official asset is reachable. Background removed by luminance key; the mark itself is unmodified. Raster, not vector. |
+| Game7 | [game7.png](game7.png) | Image supplied by the owner (Google image cache thumbnail, 200x200 PNG) | Replaces the site favicon mark used before. White background flood-filled from the edges so the white 7 inside the disc survives. Raster, not vector. |
