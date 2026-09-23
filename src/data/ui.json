@@ -3,18 +3,24 @@
     "navigation": {
         "ariaLabel": "Main navigation",
         "items": [
-            { "label": "Experience", "href": "#experience" },
-            { "label": "Projects", "href": "#projects" },
-            { "label": "Contact ↗", "href": "#contact" }
+            {
+                "label": "Experience",
+                "href": "#experience"
+            },
+            {
+                "label": "Projects",
+                "href": "#projects"
+            },
+            {
+                "label": "Contact ↗",
+                "href": "#contact"
+            }
         ]
     },
     "theme": {
         "label": "Color theme",
-        "options": [
-            { "value": "system", "label": "System theme" },
-            { "value": "light", "label": "Light theme" },
-            { "value": "dark", "label": "Dark theme" }
-        ]
+        "toDark": "Switch to dark theme",
+        "toLight": "Switch to light theme"
     },
     "heroActions": {
         "talk": "Let’s talk",
@@ -49,7 +55,10 @@
     "sections": {
         "about": {
             "kicker": "About",
-            "headingLines": ["Build it.", "Make it easy to run."],
+            "headingLines": [
+                "Build it.",
+                "Make it easy to run."
+            ],
             "disclosure": "More about my work"
         },
         "skills": {
@@ -59,12 +68,18 @@
         "experience": {
             "kicker": "Experience & open source",
             "heading": "The work, connected.",
-            "introLines": ["Consultancy, open-source projects", "and the career behind them."]
+            "introLines": [
+                "Consultancy, open-source projects",
+                "and the career behind them."
+            ]
         },
         "projects": {
             "kicker": "Projects & achievements",
             "heading": "More of the work.",
-            "introLines": ["Open source, developer tools, independent projects", "and community work."]
+            "introLines": [
+                "Open source, developer tools, independent projects",
+                "and community work."
+            ]
         },
         "background": {
             "kicker": "Background",
@@ -74,8 +89,14 @@
         },
         "contact": {
             "kicker": "Next chapter",
-            "headingLines": ["Let’s talk about", "your team."],
-            "bodyLines": ["Open to contract and full-time roles.", "Haarlem, NL · Remote-first."]
+            "headingLines": [
+                "Let’s talk about",
+                "your team."
+            ],
+            "bodyLines": [
+                "Open to contract and full-time roles.",
+                "Haarlem, NL · Remote-first."
+            ]
         }
     },
     "experience": {

@@ -20,20 +20,29 @@ export default function Hero({
                         </a>
                     ))}
                 </nav>
-                <label className="theme-control">
-                    <span className="sr-only">{ui.theme.label}</span>
-                    <select
-                        id="theme"
-                        value={theme}
-                        onChange={(event) => onThemeChange(event.target.value)}
-                    >
-                        {ui.theme.options.map((option) => (
-                            <option value={option.value} key={option.value}>
-                                {option.label}
-                            </option>
-                        ))}
-                    </select>
-                </label>
+                <button
+                    type="button"
+                    className="theme-toggle"
+                    id="theme"
+                    aria-pressed={theme === "dark"}
+                    aria-label={theme === "dark" ? ui.theme.toLight : ui.theme.toDark}
+                    title={theme === "dark" ? ui.theme.toLight : ui.theme.toDark}
+                    onClick={onThemeChange}
+                >
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                        {theme === "dark" ? (
+                            <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                                <circle cx="12" cy="12" r="4.2" />
+                                <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+                            </g>
+                        ) : (
+                            <path
+                                fill="currentColor"
+                                d="M20.7 14.6A8.8 8.8 0 0 1 9.4 3.3a1 1 0 0 0-1.3-1.2 10.6 10.6 0 1 0 13.8 13.8 1 1 0 0 0-1.2-1.3Z"
+                            />
+                        )}
+                    </svg>
+                </button>
             </header>
             <section className="vista-hero">
                 <img

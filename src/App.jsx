@@ -19,6 +19,9 @@ import PrintableCv from "./components/PrintableCv.jsx";
 
 export default function App() {
     const [theme, setTheme] = useState("system");
+    const [systemDark, setSystemDark] = useState(
+        () => window.matchMedia("(prefers-color-scheme: dark)").matches,
+    );
     const [view, setView] = useState("graph");
     const [selectedId, setSelectedId] = useState(null);
     const [highlightedId, setHighlightedId] = useState(null);
@@ -65,6 +68,16 @@ export default function App() {
     }, []);
 
     useEffect(() => {
+        const query = window.matchMedia("(prefers-color-scheme: dark)");
+        const update = (event) => setSystemDark(event.matches);
+        query.addEventListener("change", update);
+        return () => query.removeEventListener("change", update);
+    }, []);
+
+    const resolvedTheme = theme === "system" ? (systemDark ? "dark" : "light") : theme;
+    const toggleTheme = () => setTheme(resolvedTheme === "dark" ? "light" : "dark");
+
+    useEffect(() => {
         if (theme === "system") {
             delete document.documentElement.dataset.theme;
         } else {
@@ -100,8 +113,8 @@ export default function App() {
                         profile={Profile}
                         ui={Ui}
                         nodes={nodes}
-                        theme={theme}
-                        onThemeChange={setTheme}
+                        theme={resolvedTheme}
+                        onThemeChange={toggleTheme}
                         onOpenNode={openNode}
                     />
                     <About profile={Profile} ui={Ui} years={years} />
