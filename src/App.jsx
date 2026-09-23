@@ -34,17 +34,6 @@ export default function App() {
     );
 
     useEffect(() => {
-        document.title = Profile.siteTitle;
-        let description = document.querySelector('meta[name="description"]');
-        if (!description) {
-            description = document.createElement("meta");
-            description.name = "description";
-            document.head.append(description);
-        }
-        description.content = Profile.description;
-    }, []);
-
-    useEffect(() => {
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
         const targets = document.querySelectorAll(
             ".vista-frame .brand-stack, .vista-frame .brand, .content-section, .experience .intro, .complete-map, .career-history li, .project-card, .skills-grid article, .archive",

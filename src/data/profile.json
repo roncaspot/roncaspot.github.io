@@ -1,6 +1,13 @@
 {
     "siteTitle": "Joseph Ronca — Backend, platform & technical leadership",
     "description": "Joseph (Giuseppe) Ronca — Senior Backend & Platform Engineer and Tech Lead. Haarlem, NL. Open to contract and full-time roles.",
+    "share": {
+        "url": "https://roncaspot.github.io/",
+        "image": "og-image.jpg",
+        "imageAlt": "Joseph Ronca, backend and platform engineer: Systems that scale",
+        "imageWidth": 1200,
+        "imageHeight": 630
+    },
     "wordmark": {
         "base": "roncaspot",
         "accent": "."

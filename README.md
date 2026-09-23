@@ -21,6 +21,10 @@ Personal CV and portfolio site published at roncaspot.github.io. The site is a s
   /print.html with headless Chromium, and `npm run deploy` runs it before publishing, so the
   download can never fall behind the site. The script fails if the CV is not exactly two pages.
   It uses the Playwright browser; set CHROMIUM_BIN to reuse a Chromium already on the machine.
+- public/og-image.jpg is the link preview image, a 1200x630 capture of the hero. `npm run
+  share-image` regenerates it and `npm run deploy` runs it too. The page title, description and
+  share tags are written into the static HTML at build time from profile.json, because link
+  previews and search engines do not run the app.
 - index.html and print.html are Vite entry points at / and /print.html.
 
 ## Content updates

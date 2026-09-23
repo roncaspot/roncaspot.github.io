@@ -11,8 +11,9 @@
         "dev": "vite --host 0.0.0.0",
         "build": "vite build",
         "serve": "vite preview --host 127.0.0.1",
-        "deploy": "npm run build && npm run pdf && gh-pages -d dist -b gh-pages",
-        "pdf": "node scripts/generate-cv-pdf.mjs"
+        "deploy": "npm run build && npm run pdf && npm run share-image && gh-pages -d dist -b gh-pages",
+        "pdf": "node scripts/generate-cv-pdf.mjs",
+        "share-image": "node scripts/generate-share-image.mjs"
     },
     "dependencies": {
         "@fontsource/dm-sans": "^5.2.6",
