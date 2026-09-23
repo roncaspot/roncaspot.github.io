@@ -17,7 +17,10 @@ Personal CV and portfolio site published at roncaspot.github.io. The site is a s
 - src/styles.css is the approved responsive design stylesheet.
 - public/assets/hero/ contains the Granada hero photograph.
 - public/assets/logos/ contains selected-experience marks and their provenance.
-- public/curriculum.pdf is the downloadable two-page CV generated from the printable page.
+- public/curriculum.pdf is the downloadable two-page CV. `npm run pdf` regenerates it from
+  /print.html with headless Chromium, and `npm run deploy` runs it before publishing, so the
+  download can never fall behind the site. The script fails if the CV is not exactly two pages.
+  It uses the Playwright browser; set CHROMIUM_BIN to reuse a Chromium already on the machine.
 - index.html and print.html are Vite entry points at / and /print.html.
 
 ## Content updates

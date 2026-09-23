@@ -46,3 +46,9 @@ Adding a client must mean adding an object to experience.json and referencing it
 - Verify 360 px has no horizontal scroll.
 - Verify the print output is exactly two A4 pages.
 - Verify zero console errors and no outbound runtime requests.
+
+## Curriculum PDF
+
+The downloadable CV is generated, never hand-made: `npm run pdf` prints /print.html to
+`public/curriculum.pdf` and `dist/curriculum.pdf`. `npm run deploy` runs it automatically.
+Changing print styles or curriculum data means regenerating the PDF, not editing it.
