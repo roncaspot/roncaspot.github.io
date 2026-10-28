@@ -44,7 +44,7 @@
         "introFirstLine": "Selected",
         "introSecondLine": "experience",
         "labels": {
-            "odido": "Current client",
+            "odido": "Client",
             "bitvavo": "Earlier employer",
             "game7": "Earlier client",
             "azerothcore": "Open source",
@@ -155,7 +155,7 @@
         "ariaLabel": "Printable curriculum vitae",
         "profile": "Profile",
         "skills": "Skills",
-        "consultancy": "Consultancy & current engagement",
+        "consultancy": "Consultancy & own projects",
         "earlierCareer": "Earlier career",
         "openSourceProjects": "Open source & selected projects",
         "education": "Education",

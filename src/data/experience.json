@@ -42,8 +42,8 @@
             "id": "odido",
             "name": "Odido",
             "role": "DevEx & Platform Engineer",
-            "dates": "Apr 2026 – today",
-            "type": "Current client · NestDev",
+            "dates": "Apr 2026 – Oct 2026",
+            "type": "Client · NestDev",
             "highlights": [
                 "Member of the Developer Experience / Core Platform team for Odido's consumer self-service web portals.",
                 "Introduced standard structured (ECS) logging across the NestJS back ends, with request context and aligned log/APM service identity, making requests traceable end to end in Elastic.",
@@ -70,13 +70,11 @@
             ],
             "links": [],
             "printHighlights": [
-                "Member of the Developer Experience / Core Platform team for Odido's consumer self-service web portals.",
                 "Introduced standard structured (ECS) logging across the NestJS back ends, with request context and aligned log/APM service identity, making requests traceable end to end in Elastic.",
                 "Built Kibana error-investigation and service-health dashboards for all environments, managed as code with drift detection.",
                 "Implemented personal-data redaction in logs (emails, phone numbers, personal fields, URL-encoded values) and stopped outbound API clients from logging payloads, headers and credentials.",
                 "Hardened CI and the supply chain: Dependabot plus a dependency-review gate that blocks high and critical vulnerabilities, and a CI check that catches NestJS dependency-injection failures before deploy.",
-                "Delivered account and authentication features end to end: change email and name, privacy settings, redirect-origin validation, and the migration off a legacy auth bridge.",
-                "Integrated consent management (Usercentrics), global search, Web Vitals monitoring (Elastic RUM) and automated sitemap generation, and contributed to the shared design system.",
+                "Delivered account, authentication and consent features end to end, plus Web Vitals monitoring (Elastic RUM) and automated sitemap generation.",
                 "Reviewed code and backend architecture, and used AI coding agents in a governed, review-first workflow. 30+ merged pull requests in five months."
             ],
             "printRoleHtml": "DevEx & Platform Engineer, contract via <a href=\"https://www.nestdev.it/\">NestDev</a>",
@@ -119,7 +117,10 @@
             "dates": "",
             "type": "Own projects · NestDev",
             "highlights": [
-                "Built and shipped internal operations fullstack tooling (stock management, workflows, automation) and AI-assisted integrations."
+                "Tirrenia platform, my own product used daily in my café in Haarlem: a TypeScript monorepo with NestJS (REST, GraphQL), an Angular admin console and a Next.js site on PostgreSQL, with about 30 backend modules from menu and inventory to pricing and payroll.",
+                "Integrations with Odoo, Thuisbezorgd / Just Eat Takeaway, bunq, Viva Wallet and supplier catalogues.",
+                "An AI agent that plans with an LLM and calls the platform's own API as tools, with a chat interface and a dry-run mode; the same APIs are exposed as MCP servers for AI agents.",
+                "Open-source tooling to distribute and coordinate AI coding agents: agentwheel and agent-mesh."
             ],
             "tech": "",
             "mark": {
@@ -131,7 +132,9 @@
             "relationshipsHtml": [],
             "links": [],
             "printHighlights": [
-                "Built and shipped internal operations fullstack tooling (stock management, workflows, automation) and AI-assisted integrations."
+                "Tirrenia platform, my own product used daily in my café in Haarlem: TypeScript monorepo with NestJS, Angular and Next.js on PostgreSQL; about 30 modules, integrated with Odoo, Just Eat Takeaway, bunq and Viva Wallet.",
+                "An AI agent that plans with an LLM and calls the platform's own API as tools, with a dry-run mode; the same APIs are exposed as MCP servers.",
+                "Open-source tooling to distribute and coordinate AI coding agents: agentwheel and agent-mesh."
             ],
             "printRoleHtml": "Own projects · <a href=\"https://www.nestdev.it/\">NestDev</a>",
             "printPage": 1
@@ -245,7 +248,7 @@
             "dates": "Sep 2018 – Nov 2019",
             "type": "Earlier career",
             "highlights": [
-                "Skills acquired: ReactJS 16.*, GraphQL, Apollo Framework, Node.js, TypeScript, Electron, Apache Cordova, C++, Docker, GSuite, project management with the Agile framework, GitHub and GitLab platforms, Clockify."
+                "Built web, desktop and mobile apps with React, GraphQL/Apollo, Node.js, TypeScript, Electron and Cordova, and ran the projects with Agile practices."
             ],
             "tech": "",
             "mark": {
@@ -257,7 +260,7 @@
             "relationshipsHtml": [],
             "links": [],
             "printHighlights": [
-                "Skills acquired: ReactJS 16.*, GraphQL, Apollo Framework, Node.js, TypeScript, Electron, Apache Cordova, C++, Docker, GSuite, project management with the Agile framework, GitHub and GitLab platforms, Clockify."
+                "Built web, desktop and mobile apps with React, GraphQL/Apollo, Node.js, TypeScript, Electron and Cordova, and ran the projects with Agile practices."
             ],
             "printPage": 2
         },
@@ -350,6 +353,29 @@
             "links": [],
             "printHighlights": [
                 "Developed proprietary CRM, CSM and e-commerce software. Main languages: Java & PHP."
+            ],
+            "printPage": 2
+        },
+        {
+            "id": "earlier-roles",
+            "name": "Earlier roles",
+            "role": "Lenus Media · Graffelab · 7Web",
+            "dates": "2009 – 2016",
+            "type": "Earlier career",
+            "highlights": [
+                "Lead and full-stack developer: cross-platform web and mobile apps (PHP, Cordova, REST), front-end work, and CRM and e-commerce software (Java, PHP)."
+            ],
+            "tech": "",
+            "mark": {
+                "type": "monogram",
+                "text": "+",
+                "className": "monogram"
+            },
+            "contextHtml": "",
+            "relationshipsHtml": [],
+            "links": [],
+            "printHighlights": [
+                "Lead and full-stack developer: cross-platform web and mobile apps (PHP, Cordova, REST), front-end work, and CRM and e-commerce software (Java, PHP)."
             ],
             "printPage": 2
         },
@@ -686,7 +712,7 @@
         "consultancy": [
             {
                 "id": "odido",
-                "label": "Current client",
+                "label": "Client",
                 "className": "odido-node"
             },
             {
@@ -775,10 +801,8 @@
             "bitvavo",
             "harlem",
             "redsquare",
-            "lenus",
-            "graffelab",
-            "sevenweb",
-            "hyperweb"
+            "hyperweb",
+            "earlier-roles"
         ]
     }
 }

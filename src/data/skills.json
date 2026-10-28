@@ -5,6 +5,11 @@
         "description": "TypeScript · Node.js · NestJS · GraphQL / Apollo · PostgreSQL / MySQL · C++ · Java · PHP"
     },
     {
+        "id": "ai",
+        "name": "AI integrations",
+        "description": "LLM agents · MCP · RAG · LangChain · A2A · OpenAI API · Tool calling over existing APIs"
+    },
+    {
         "id": "platform",
         "name": "Platform / cloud",
         "description": "AWS · CDK · Lambda · ECS / Fargate · Kubernetes · Docker · GitHub Actions · CI/CD"
