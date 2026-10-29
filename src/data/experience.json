@@ -117,7 +117,7 @@
             "dates": "",
             "type": "Own projects · NestDev",
             "highlights": [
-                "Tirrenia platform, my own product used daily in my café in Haarlem: a TypeScript monorepo with NestJS (REST, GraphQL), an Angular admin console and a Next.js site on PostgreSQL, with about 30 backend modules from menu and inventory to pricing and payroll.",
+                "Tirrenia, my own platform in production: a TypeScript monorepo with NestJS (REST, GraphQL), an Angular admin console and a Next.js site on PostgreSQL, with about 30 backend modules from menu and inventory to pricing and payroll.",
                 "Integrations with Odoo, Thuisbezorgd / Just Eat Takeaway, bunq, Viva Wallet and supplier catalogues.",
                 "An AI agent that plans with an LLM and calls the platform's own API as tools, with a chat interface and a dry-run mode; the same APIs are exposed as MCP servers for AI agents.",
                 "Open-source tooling to distribute and coordinate AI coding agents: agentwheel and agent-mesh."
@@ -132,7 +132,7 @@
             "relationshipsHtml": [],
             "links": [],
             "printHighlights": [
-                "Tirrenia platform, my own product used daily in my café in Haarlem: TypeScript monorepo with NestJS, Angular and Next.js on PostgreSQL; about 30 modules, integrated with Odoo, Just Eat Takeaway, bunq and Viva Wallet.",
+                "Tirrenia, my own platform in production: TypeScript monorepo with NestJS, Angular and Next.js on PostgreSQL; about 30 modules, integrated with Odoo, Just Eat Takeaway, bunq and Viva Wallet.",
                 "An AI agent that plans with an LLM and calls the platform's own API as tools, with a dry-run mode; the same APIs are exposed as MCP servers.",
                 "Open-source tooling to distribute and coordinate AI coding agents: agentwheel and agent-mesh."
             ],
