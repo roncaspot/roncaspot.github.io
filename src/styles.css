@@ -390,6 +390,7 @@
         .cv-role { margin: .7mm 0 !important; font-style: italic; }
         .cv-entry ul { padding-left: 4mm; margin: 1mm 0 0; }
         .cv-entry li { margin-bottom: .6mm; }
+        .cv-page:first-child .cv-entry li { margin-bottom: .25mm; }
         .print-cv footer { position: absolute; bottom: 0; left: 0; right: 0; border-top: .3pt solid #aaa; padding-top: 2mm; font-size: 7pt; }
         .print-cv footer span { float: right; }
         a { color: #111; text-decoration: none; }
