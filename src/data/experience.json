@@ -5,6 +5,7 @@
             "id": "nestdev",
             "name": "NestDev",
             "role": "Software Engineer · Contractor",
+            "printRoleHtml": "Independent Platform Engineer &amp; Tech Lead",
             "dates": "Dec 2024 – today",
             "type": "Own company",
             "highlights": [
@@ -33,8 +34,8 @@
                 }
             ],
             "printHighlights": [
-                "Freelance software engineering and technical leadership across multiple clients.",
-                "Focused on modular design, scalability, performance, and reliability."
+                "I help client teams design, build, and run backend systems and developer platforms.",
+                "I work hands-on, guide technical decisions, and mentor engineers. I also build the automation and observability that make production systems easier to operate and scale."
             ],
             "printPage": 1
         },
@@ -791,9 +792,9 @@
             }
         ],
         "printPageOne": [
+            "nestdev",
             "odido",
             "game7",
-            "nestdev",
             "internal"
         ],
         "printPageTwo": [
