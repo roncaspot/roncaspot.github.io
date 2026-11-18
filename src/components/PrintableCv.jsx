@@ -25,6 +25,27 @@ function CvEntry({ node }) {
     );
 }
 
+function CvEntries({ ids, edges, nodes }) {
+    const clients = edges.filter(
+        ({ from, to, type }) => type === "client" && ids.includes(from) && ids.includes(to),
+    );
+    const clientIds = new Set(clients.map(({ to }) => to));
+
+    return ids.filter((id) => !clientIds.has(id)).map((id) => {
+        const assignments = clients.filter(({ from }) => from === id);
+        if (!assignments.length) return <CvEntry node={nodes[id]} key={id} />;
+
+        return (
+            <div key={id}>
+                <CvEntry node={nodes[id]} />
+                <div className="cv-client-entries">
+                    {assignments.map(({ to }) => <CvEntry node={nodes[to]} key={to} />)}
+                </div>
+            </div>
+        );
+    });
+}
+
 function CvFooter({ ui, page }) {
     return (
         <footer>
@@ -66,16 +87,12 @@ export default function PrintableCv({ profile, skills, education, experience, no
                     </p>
                 ))}
                 <h2>{ui.print.consultancy}</h2>
-                {experience.layout.printPageOne.map((id) => (
-                    <CvEntry node={nodes[id]} key={id} />
-                ))}
+                <CvEntries ids={experience.layout.printPageOne} edges={experience.edges} nodes={nodes} />
                 <CvFooter ui={ui} page={ui.print.pageOne} />
             </div>
             <div className="cv-page">
                 <h2>{ui.print.earlierCareer}</h2>
-                {experience.layout.printPageTwo.map((id) => (
-                    <CvEntry node={nodes[id]} key={id} />
-                ))}
+                <CvEntries ids={experience.layout.printPageTwo} edges={experience.edges} nodes={nodes} />
                 <h2>{ui.print.openSourceProjects}</h2>
                 <CvEntry node={azeroth} />
                 <p>

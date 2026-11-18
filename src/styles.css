@@ -384,6 +384,7 @@
         .cv-contact { font-size: 8pt; margin-top: 2mm !important; }
         .cv-skill { font-size: 8pt; }
         .cv-entry { margin-bottom: 2mm; break-inside: avoid; }
+        .cv-client-entries { margin-left: 3mm; padding-left: 3mm; border-left: .35pt solid #aaa; }
         .cv-entry > div { display: flex; justify-content: space-between; gap: 5mm; }
         .cv-entry > div > span { font-size: 8pt; white-space: nowrap; }
         .cv-role { margin: .7mm 0 !important; font-style: italic; }
